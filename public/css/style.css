@@ -59,7 +59,7 @@ margin-left: 100px;
     align-items: center; /* Centre verticalement le contenu */
 	border-radius: 10px;
 }
-.h2index:hover, .h2i:hover {
+.h2index:hover, .h2i:hover, .commande:hover {
     background-color: red;   /* la couleur du fond au survol de la souris */
 }
 .bas{
