@@ -3,7 +3,7 @@ body{
  
 }
 .haut{
-	background-image:url(images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
+	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
 	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
 	background-repeat: no-repeat; /* Empêche l’image de se répéter */
 	background-position: center; 
