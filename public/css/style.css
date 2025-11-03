@@ -3,7 +3,7 @@ body{
  
 }
 .haut{
-	background-image:url(fond-resto.jpg);
+	background-image:url(images/fond-resto.jpg);
 	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
 	background-repeat: no-repeat; /* Empêche l’image de se répéter */
 	background-position: center; 
@@ -137,7 +137,7 @@ footer{
     --accent-color: #ffcc00;                /* Couleur accent pour darkmode */
     
 	background-color: var(--base-color); /* Applique la couleur principale au fond de la page */
-  color: var(--text-color);                /* Applique la couleur du texte */
+  color: var(--accent-color);                /* Applique la couleur du texte */
 } 
 /* switch pour changer le mode sombre / clair */
 #switch{
@@ -176,7 +176,7 @@ footer{
    margin-right: 200px;
 }
 .Com{
-	 background-image:url(texture.jpg);
+	 background-image:url(images/texture.jpg);
       background-size: cover;
       background-position: center;
 }
