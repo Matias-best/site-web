@@ -175,12 +175,6 @@ footer{
    top: -450px;   
    margin-right: 200px;
 }
-.commande{
-      border: 1px solid black;
-   height: 5vh;
-   width: 5vw;
-   background-color: beige;  	 
-}
 .Com{
 	 background-image:url(../../images/texture.jpg);
       background-size: cover;
