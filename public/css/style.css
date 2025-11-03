@@ -66,7 +66,6 @@ margin-left: 100px;
 	background-color: beige;
 	 display: flex;
   width: 710px; /* Largeur fixe du bloc beige */
-  margin-left: 490px;
 
 }
 footer{
@@ -176,7 +175,7 @@ footer{
    margin-right: 200px;
 }
 .Com{
-	 background-image:url(images/texture.jpg);
+	 background-image:url(../../images/texture.jpg);
       background-size: cover;
       background-position: center;
 }
