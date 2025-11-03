@@ -146,7 +146,7 @@ footer{
   background-color: white;   /* Couleur du boutons */
      /* Utilise Flexbox pour centrer le contenu */
   position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-  margin-left: 1140px;
+  margin-left: 1200px;
   top: 30px;  
 }
 
