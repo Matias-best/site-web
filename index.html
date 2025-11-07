@@ -9,47 +9,66 @@
 	</head>
 	
 	<body>
-	 <!-- Partie supérieure de la page -->
-	 <button id="switch">
-	 <img src="images/lunes.jpg" width="40" height="40" alt="lune">
-	 <img src="images/soleil.png"  width="40" height="40" alt="soleil">
-	 </button>
-	<div class="haut">
-		<h1> <i>Bienvenue dans<br>notre restaurent !</i> </h1>
-		      <p> Découvrez nos plats faits maison </p>
-	    <nav>
-			<a href=" "><h2 class="h2index">Menu</h2></a>
-			<a href=" "><h2 class="h2i">Contact</h2></a>
-		</nav>
-	</div>
-	<!-- Bande beige du bas -->
-<!-- Bande beige du bas (zone footer) -->
-<div class="bas">
-	<footer> <!-- le pied de page -->
-		<div class="plat1">
-				<h2> Nos spécialités </h2>
-				<img src="images/risotto.jpg" alt="Risotto">
-				<p>Risotto aux champignons</p>
+		<!-- Partie supérieure de la page -->
+		<header>
+	 		<button id="switch">
+	 			<img src="images/lunes.jpg" width="40" height="40" alt="lune">
+	 			<img src="images/soleil.png"  width="40" height="40" alt="soleil">
+	 		</button>
+			
+		</header>
+		<section class="menu"> 
+				<div>
+					<h1> Navigation </h1>
+						<nav> 
+							<ul> 
+								<li><a href=" "><h2 class="h2index">Menu</h2></a></li>
+								<li><a href="public/html/commander.html"><h2>Commander</h2></a></li>
+								<li><a href=" "><h2 class="h2i">Contact</h2></a></li>
+							</ul>
+						</nav>
+				</div>
+			</section>
+		<div class="haut">
+			<h1> <i>Bienvenue dans<br>notre restaurant !</i> </h1>
+		     	 <p> Découvrez nos plats faits maison </p>
+	    	<nav>
+				<ul>
+					<li>
+						<a href=" "><h2 class="h2index">Menu</h2></a>
+					</li>
+					<li>
+						<a href=" "><h2 class="h2i">Contact</h2></a>
+					</li>
+				</ul>
+			</nav>
 		</div>
+	<!-- Bande beige du bas -->
+<div class="bas">
+	<div class="plat1">
+		<h2> Nos spécialités </h2>
+			<img src="images/risotto.jpg" alt="Risotto">
+			<p>Risotto aux champignons</p>
+	</div>
 		<div class ="plat2">
 			<img src="images/Magret.jpg" alt="Magret">
 			<p> Magret de canard au miel</p>
 		</div>
 		<div class="hor">
 			<h2> Horaire </h2>
-			<p> Lundi: 11h-14h/19h-23h<br><br>
-			    Mardi: 11h-14h/19h-23h<br><br> 
-				Mercredi: 11h-14h/19h-23h<br> <br>
-				Jeudi: 11h-14h/19h-23h<br> <br> 
-				Vendredi: 11h-14h/19h-23h<br> <br> 
-				Samedi: 11h-14h/19h-23h<br> <br>
-				Dimanche: 11h-14h/19h-23h
-			</p>
+				<p> Lundi: 11h-14h/19h-23h<br><br>
+			  	  Mardi: 11h-14h/19h-23h<br><br> 
+					Mercredi: 11h-14h/19h-23h<br> <br>
+					Jeudi: 11h-14h/19h-23h<br> <br> 
+					Vendredi: 11h-14h/19h-23h<br> <br> 
+					Samedi: 11h-14h/19h-23h<br> <br>
+					Dimanche: 11h-14h/19h-23h
+				</p>
 		</div>
 		<div class="maps">
 			<h2>Nous trouver</h2>
-			<p>23 Bd de Sébastopol, 75001 Paris</p>
-			<img src="images/Maps.jpg" alt="Maps">
+				<p>23 Bd de Sébastopol, 75001 Paris</p>
+				<img src="images/Maps.jpg" alt="Maps">
 		</div>	
 		
 		<div class="com"> 
@@ -58,6 +77,8 @@
 				<a href="public/html/commander.html"><h2>Commander</h2></a>
 			</nav>
 		</div>
+	<footer> <!-- le pied de page -->
+		
 	</footer>
 </div>
 <script type="text/javascript" src= "public/js/JavaScript.js"></script>

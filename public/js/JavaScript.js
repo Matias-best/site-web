@@ -18,3 +18,10 @@ Switch.addEventListener("click",()=>{
 	console.log("frkf,ekr fekf ")
 	localStorage.getItem('darkmode') !=='active' ? enableDarkmode() : disableDarkmode()
 })
+
+//menu 
+
+function toggleNavMenu() {
+	 const navMenu = document.querySelector('menu');
+	 navMenu.classList.toogle('active');
+}

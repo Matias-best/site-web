@@ -9,22 +9,22 @@ body{
 	background-position: center; 
 	display:flex; /* Active Flexbox pour centrer les éléments à l’intérieur */
 	flex-direction: column;  /* Place les éléments à l’intérieur en colonne (verticalement) */	 
-  align-items: center; /* Centre horizontalement les éléments */
+    align-items: center; /* Centre horizontalement les éléments */
 }
 p {
 	position: relative;/* Permet de déplacer l’élément par rapport à sa position normale */
 	margin-left: 100px; /* Décale le paragraphe de 100px vers la droite */
 	color:red;
 	top: -80px; /* Fait "monter" le paragraphe de 80px */
-	 font-size: 20px; /* Taille du texte à 20 pixels */
+	font-size: 20px; /* Taille du texte à 20 pixels */
 	
 }
 h1{
 	position: relative;
 	color: white; 
 	padding: 40px;  /* Ajoute de l’espace à l’intérieur autour du texte */
-	 font-size: 50px;
-	 margin-left: 100px; 
+	font-size: 50px;
+	margin-left: 100px; 
 }
 
 h2{
@@ -34,10 +34,10 @@ h2{
 	position: relative;
 	top: -100px;
 	display: flex;   
-margin-left: 100px;	
+    margin-left: 100px;	
     justify-content: center; /* Centre horizontalement le contenu */
-	  border: 1px solid black; /* Ajoute une bordure noire d’un pixel */
-	  height:5vh; /* Hauteur du bloc = 5% de la hauteur de l’écran */
+	border: 1px solid black; /* Ajoute une bordure noire d’un pixel */
+	height:5vh; /* Hauteur du bloc = 5% de la hauteur de l’écran */
 	width:5vw; /* Largeur du bloc = 5% de la largeur de l’écran */
 	background-color: beige; /* Fond beige */
 	font-size: 30px;
@@ -47,9 +47,9 @@ margin-left: 100px;
 .h2i{
 	position: relative;
 	top: -170px;
-	 font-size: 20px;
+	font-size: 20px;
 	border: 1px solid black;
-	 height:0vh; 
+	height:0vh; 
 	width:2vw;
 	background-color: beige;
 	margin-left: 220px;
@@ -64,9 +64,9 @@ margin-left: 100px;
 }
 .bas{
 	background-color: beige;
-	 display: flex;
-  width: 725px; /* Largeur fixe du bloc beige */
-  margin-left:570px;
+	display: flex;
+    width: 725px; /* Largeur fixe du bloc beige */
+    margin-left:570px;
 
 }
 footer{
@@ -132,13 +132,23 @@ footer{
 	position:relative;
 	border-radius: 10px;
 }
+
 .darkmode {
     --base-color: #121212;                  /* Fond principal sombre */
-    --accent-color: #ffcc00;                /* Couleur accent pour darkmode */
+    --accent-color: #000000;                /* Couleur accent pour darkmode */
     
 	background-color: var(--base-color); /* Applique la couleur principale au fond de la page */
   color: var(--accent-color);                /* Applique la couleur du texte */
 } 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	border-bottom: 2px solid #808080;
+}
 /* switch pour changer le mode sombre / clair */
 #switch{
    
@@ -244,4 +254,14 @@ footer{
 .boisson-card .thumb{
       width: 48%;
 	  aspect-ratio: 4/4;
+}
+.menu {
+	display: none;
+	position: sticky;
+	background-color: white;
+	border: black 1px solid;
+	padding: 15px;;
+}
+.menu.active {
+	display:block;
 }
