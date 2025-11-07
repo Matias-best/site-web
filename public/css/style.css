@@ -11,7 +11,7 @@ body{
 	flex-direction: column;  /* Place les éléments à l’intérieur en colonne (verticalement) */	 
     align-items: center; /* Centre horizontalement les éléments */
 }
-p {
+.haut p {
 	position: relative;/* Permet de déplacer l’élément par rapport à sa position normale */
 	margin-left: 100px; /* Décale le paragraphe de 100px vers la droite */
 	color:red;
@@ -65,70 +65,77 @@ h2{
 .bas{
 	background-color: beige;
 	display: flex;
-    width: 725px; /* Largeur fixe du bloc beige */
-    margin-left:570px;
+    width: 879px; /* Largeur fixe du bloc beige */
+   margin-left: 592px;
+	flex-direction: column;
 
 }
 footer{
 	text-align: center; /* Centre le texte du bas de page */
 }
 .plat1 img {
+	position: relative;
 	width: 200px; /* Largeur fixe de l’image */
-	margin-right: 400px; /* Décale l’image de 400 pixels vers la gauche */
+	margin-left: 116px; /* Décale l’image de 400 pixels vers la gauche */
 	border-radius: 10px; /* Coins arrondis de 10 pixels */
+	top: -20px;
 }
 .plat1 p {
 	position: relative;
 	color : black;
-	top: 1px;
-	margin-right: 500px;
+	margin-left: 120px;
+	top: -10px;
 }
-.plat1 h2 {
+.bas h2 {
 	 font-size: 30px;
+	 margin-left: 290px;
+	 top: -20px;
+  position: relative;
 }
 .plat2 img {
 	position: relative;
 	width: 200px;
 	height: 150px;
-	top: -230px;
-	margin-left: 300px;
+	top: -213px;
+	margin-left: 507px;
 	border-radius: 10px;
 }
 .plat2 p {
 	color:black;
 	position: relative;
-	top: -230px;
-	margin-left:300px;
+	top: -215px;
+	margin-left:500px;
 } 
 
 .hor h2 {
    font-size: 30px;	
    position: relative;
    top: -200px; 
-   margin-left: 260px;
+  margin-left: 658px;
 }
 
 .hor p {
 	color: black;
 	position: relative;
 	top: -200px;
-	margin-left: 300px;
+	margin-left: 610px;
 }
 .maps h2 {
 	font-size: 30px;
 	position: relative;
-	margin-right: 400px;
-	top: -500px;
+	margin-left: 125px;
+	top: -620px;
 }
 .maps p {
 	color: black;
-	margin-right: 600px;
-	top:-500px;
+	margin-left: 120px;
+  top: -386px;
+  position: relative;
 }
 .maps img {
 	width: 350px;
-	margin-right: 350px;
-	top: -500px;
+	margin-left: 70px;
+  	top: -640px;
 	position:relative;
 	border-radius: 10px;
 }
@@ -176,8 +183,9 @@ header {
 .com p{
 	 color: black;
 	 position: relative;
-	 top: -470px;
-	 margin-right: 200px;
+	top: -510px;
+  margin-left: 200px;
+  font-size: 25px;
 	 font-size: 25px;
 }
 .com a{
