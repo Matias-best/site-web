@@ -293,122 +293,105 @@ header {
     top: 10px;
 }
 /*  Sur téléphone (max 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+
   body {
-    overflow-x: hidden;
+    margin: 0;
     font-size: 16px;
   }
 
+  /* Header : centrer les boutons et réduire leur taille */
   header {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
+    padding: 10px 0;
   }
 
   #switch {
     margin-left: 0;
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
   }
 
+  #but {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Section haut : réduire image de fond et texte */
   .haut {
     background-size: cover;
-    padding: 40px 10px;
+    padding: 20px 10px;
     text-align: center;
   }
 
-  h1 {
-    font-size: clamp(24px, 6vw, 40px);
+  .haut h1 {
+    font-size: 30px;
     margin-left: 0;
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   .haut p {
-    top: 0;
     margin-left: 0;
-    font-size: 18px;
+    top: 0;
+    font-size: 16px;
   }
 
   .h2index, .h2i {
-    position: static;
-    width: auto;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: clamp(16px, 4vw, 22px);
-    display: block;
-    text-align: center;
-  }
-
-  .bas {
-    width: 100%;
-    margin: 0;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .plat1, .plat2, .hor, .maps, .com {
-    position: static;
-    margin: 20px auto;
-    text-align: center;
-  }
-
-  .plat1 img, .plat2 img, .maps img {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .plat1 p, .plat2 p, .maps p, .hor p, .com p {
-    margin: 10px 0;
-    color: black;
+    margin-left: 0;
     font-size: 18px;
+    height: auto;
+    width: auto;
+    padding: 10px;
   }
 
-  .maps h2, .hor h2, .bas h2 {
-    margin: 10px auto;
-    font-size: clamp(20px, 4vw, 26px);
-    text-align: center;
-    position: static;
-  }
-
-  .com a {
-    position: static;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
-  }
-
-  .repas {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .card {
+  /* Bande beige : coller au centre et largeur 100% */
+  .bas {
     width: 90%;
     margin: auto;
   }
 
+  /* Images des plats : réduire taille et repositionner */
+  .plat1 img, .plat2 img, .maps img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .plat1 p, .plat2 p, .hor p, .maps p, .com p {
+    margin-left: 0;
+    top: 0;
+    font-size: 16px;
+  }
+
+  /* Grille des catégories */
+  .repas {
+    grid-template-columns: 1fr; /* une colonne sur mobile */
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .card .label, .card .subtitle {
+    font-size: 18px;
+  }
+
   .menu {
-    position: fixed;
     top: 60px;
     right: 10px;
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin: 0;
-    z-index: 1000;
+    padding: 10px;
   }
 
   .menu ul {
     top: 0;
   }
 
-  .boisson-card .thumb {
-    width: 80%;
-  }
-
-  footer {
-    font-size: 14px;
-    text-align: center;
-    padding: 20px;
-  }
 }
  
