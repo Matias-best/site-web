@@ -65,8 +65,8 @@ h2{
 .bas{
 	background-color: beige;
 	display: flex;
-  width: 710px;
-    margin-left: 404px; /* Largeur fixe du bloc beige */
+width: 712px;
+    margin-left: 491px; /* Largeur fixe du bloc beige */
 	flex-direction: column;
 
 }
@@ -162,7 +162,7 @@ header {
   background-color: white;   /* Couleur du boutons */
      /* Utilise Flexbox pour centrer le contenu */
   position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-  margin-left: 1550px;
+  margin-left: 1750px;
   
 }
 
@@ -192,11 +192,7 @@ header {
    top: -450px;   
    margin-right: 200px;
 }
-.Com{
-	 background-image:url(../../images/texture.jpg);
-      background-size: cover;
-      background-position: center;
-}
+
   /* Conteneur central */
  .wrap{
       max-width:  1100px; /* Largeur max du conteneur central */
@@ -262,6 +258,7 @@ header {
       width: 48%;
 	  aspect-ratio: 4/4;
 }
+
 .menu {
 	display: none;
 	position: absolute;
@@ -293,7 +290,34 @@ header {
   }
 .menu details ul {
 	position: relative;
-    top: 0px;
+    top: 10px;
+}
+/*  Sur téléphone (max 480px) */
+@media screen and (max-width: 480px) {
+	.bas{
+		width: 90%; /* Largeur adaptative */
+		margin-left: 5%; /* Centré avec marges égales */
+	}
+	.haut h1{
+		font-size: 30px; /* Texte plus petit */
+		margin-left: 0; /* Centré */
+		padding: 20px;
+	}
+	.plat1 img, .plat2 img, .maps img {
+		width: 100%; /* Images pleine largeur */
+		margin-left: 0; /* Centré */
+	}
+	.plat1 p, .plat2 p, .maps p, .hor p, .com p {
+		margin-left: 0; /* Centré */
+		font-size: 18px; /* Texte plus petit */
+	}
+	.hor h2, .maps h2 {
+		margin-left: 0; /* Centré */
+		font-size: 24px; /* Texte plus petit */
+	}
+	#switch {
+		margin-left: auto; /* Aligne à droite */
+	}
 }
 
  

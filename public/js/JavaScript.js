@@ -16,7 +16,6 @@ if(darkmode === "active") enableDarkmode();
 
 
 Switch.addEventListener("click",()=>{
-	console.log("frkf,ekr fekf ");
 	localStorage.getItem('darkmode') !=='active' ? enableDarkmode() : disableDarkmode();
 })
 
