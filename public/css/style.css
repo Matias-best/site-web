@@ -293,33 +293,97 @@ header {
     top: 10px;
 }
 /*  Sur téléphone (max 768px) */
-@media screen and (max-width: 768px) {
+/* === Grand écran (≥1200px) === */
+@media screen and (min-width: 1200px) {
+  .haut h1 {
+    font-size: 60px;
+    margin-left: 150px;
+  }
+  
+  .haut p {
+    font-size: 24px;
+    margin-left: 120px;
+    top: -80px;
+  }
+
+  .h2index, .h2i {
+    font-size: 30px;
+    padding: 20px;
+    margin-left: 150px;
+  }
+
+  .bas {
+    width: 80%;
+    margin: auto;
+  }
+
+  .plat1 img, .plat2 img, .maps img {
+    width: 250px;
+    height: auto;
+  }
+
+  .repas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .title {
+    font-size: clamp(36px, 6vw, 72px);
+  }
+}
+
+/* === Tablettes (768px - 1199px) === */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .haut h1 {
+    font-size: 50px;
+    margin-left: 50px;
+  }
+
+  .haut p {
+    font-size: 20px;
+    margin-left: 20px;
+    top: -50px;
+  }
+
+  .bas {
+    width: 90%;
+    margin: auto;
+  }
+
+  .repas {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .plat1 img, .plat2 img, .maps img {
+    width: 200px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+/* === Mobile / Galaxy (≤480px) === */
+@media screen and (max-width: 480px) {
 
   body {
-    margin: 0;
     font-size: 16px;
   }
 
-  /* Header : centrer les boutons et réduire leur taille */
   header {
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
   }
 
-  #switch {
+  #switch, #but {
     margin-left: 0;
     margin-top: 10px;
     width: 35px;
     height: 35px;
   }
 
-  #but {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  /* Section haut : réduire image de fond et texte */
   .haut {
     background-size: cover;
     padding: 20px 10px;
@@ -329,7 +393,7 @@ header {
   .haut h1 {
     font-size: 30px;
     margin-left: 0;
-    padding: 20px 10px;
+    padding: 10px;
   }
 
   .haut p {
@@ -346,13 +410,11 @@ header {
     padding: 10px;
   }
 
-  /* Bande beige : coller au centre et largeur 100% */
   .bas {
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
 
-  /* Images des plats : réduire taille et repositionner */
   .plat1 img, .plat2 img, .maps img {
     width: 100%;
     height: auto;
@@ -363,12 +425,11 @@ header {
   .plat1 p, .plat2 p, .hor p, .maps p, .com p {
     margin-left: 0;
     top: 0;
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  /* Grille des catégories */
   .repas {
-    grid-template-columns: 1fr; /* une colonne sur mobile */
+    grid-template-columns: 1fr; /* une seule colonne */
     gap: 20px;
     padding: 0 10px;
   }
@@ -392,6 +453,5 @@ header {
   .menu ul {
     top: 0;
   }
-
 }
  
