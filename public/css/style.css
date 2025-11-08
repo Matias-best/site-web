@@ -293,7 +293,7 @@ header {
     top: 10px;
 }
 /*  Sur téléphone (max 768px) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   body {
     margin: 0;
