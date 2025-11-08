@@ -153,7 +153,7 @@ header {
 	justify-content: space-between;
 	padding: 10px;
 	border-bottom: 3px solid #808080;
-	width: 107%;
+	width: 99%;
 }
 /* switch pour changer le mode sombre / clair */
 #switch{
@@ -162,7 +162,7 @@ header {
   background-color: white;   /* Couleur du boutons */
      /* Utilise Flexbox pour centrer le contenu */
   position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-  margin-left: 1750px;
+      margin-left: 1590px;
   
 }
 
@@ -292,30 +292,156 @@ header {
 	position: relative;
     top: 10px;
 }
-/*  Sur téléphone (max 480px) */
-@media screen and (max-width: 480px) {
-	.bas{
-		width: 90%; /* Largeur adaptative */
-		margin-left: 5%; /* Centré avec marges égales */
-	}
-	.haut h1{
-		font-size: 30px; /* Texte plus petit */
-		margin-left: 0; /* Centré */
-		padding: 20px;
-	}
-	.plat1 img, .plat2 img, .maps img {
-		width: 100%; /* Images pleine largeur */
-		margin-left: 0; /* Centré */
-	}
-	.plat1 p, .plat2 p, .maps p, .hor p, .com p {
-		margin-left: 0; /* Centré */
-		font-size: 18px; /* Texte plus petit */
-	}
-	.hor h2, .maps h2 {
-		margin-left: 0; /* Centré */
-		font-size: 24px; /* Texte plus petit */
-	}
-
+/*  Sur téléphone (max 768px) */
+@media screen and (max-width: 768px) {
+.com p {
+    color: black;
+    position: relative;
+    top: -460px;
+    margin-left: 86px;
+    font-size: 25px;
+    font-size: 25px;
+}
+.bas h2 {
+    font-size: 28px;
+    margin-left: 110px;
+    top: -20px;
+    position: relative;
+}
+.maps h2 {
+    font-size: 30px;
+    position: relative;
+    margin-left: 11px;
+    top: -660px;
+}
+.hor p {
+    color: black;
+    position: relative;
+    top: -200px;
+    margin-left: 230px;
+}
+.hor h2 {
+    font-size: 30px;
+    position: relative;
+    top: -190px;
+    margin-left: 208px;
 }
 
+.maps img {
+    width: 200px;
+    margin-left: 0px;
+    top: -690px;
+    position: relative;
+    border-radius: 10px;
+}
+.maps p {
+    color: black;
+    margin-left: 4px;
+    top: -506px;
+    position: relative;
+    font-size: 16px;
+}
+.plat1 p {
+    position: relative;
+    color: black;
+    margin-left: 1px;
+    top: -10px;
+}
+.plat2 p {
+    color: black;
+    position: relative;
+    top: -195px;
+    margin-left: 190px;
+}
+.plat1 img {
+    position: relative;
+    width: 150px;
+    margin-left: 5px;
+    border-radius: 10px;
+    top: -20px;
+}
+.plat2 img {
+    position: relative;
+    width: 170px;
+    height: 130px;
+    top: -183px;
+    margin-left: 177px;
+    border-radius: 10px;
+}
+h1 {
+    position: relative;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    margin-left: 50px;
+    top: 30px;
+    position: relative;
+}
+.haut p {
+    position: relative;
+    margin-left: 100px;
+    color: red;
+    top: -30px;
+    font-size: 20px;
+}
+.h2index {
+    position: relative;
+    top: -59px;
+    display: flex;
+    margin-left: 2px;
+    justify-content: center;
+    border: 1px solid black;
+    height: 5vh;
+    width: 26vw;
+    background-color: beige;
+    font-size: 22px;
+    border-radius: 10px;
+}
+.h2i {
+    position: relative;
+    top: -113px;
+    font-size: 18px;
+    border: 1px solid black;
+    height: 0vh;
+    width: 10vw;
+    background-color: beige;
+    margin-left: 110px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.haut {
+    background-image: url(../../images/Fond-resto.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -62px;
+}
+.bas {
+    background-color: beige;
+    display: flex;
+    width: 359px;
+    /* margin-left: 0px; */
+    flex-direction: column;
+    top: -130px;
+    position: relative;
+}
+#switch {
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    margin-left: 271px;
+}
+#but {
+    background: none;
+    border: none;
+}
+
+}
  
