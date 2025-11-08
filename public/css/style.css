@@ -65,8 +65,8 @@ h2{
 .bas{
 	background-color: beige;
 	display: flex;
-    width: 879px; /* Largeur fixe du bloc beige */
-   margin-left: 592px;
+  width: 710px;
+    margin-left: 404px; /* Largeur fixe du bloc beige */
 	flex-direction: column;
 
 }
@@ -76,14 +76,14 @@ footer{
 .plat1 img {
 	position: relative;
 	width: 200px; /* Largeur fixe de l’image */
-	margin-left: 116px; /* Décale l’image de 400 pixels vers la gauche */
+	margin-left: 75px; /* Décale l’image de 400 pixels vers la gauche */
 	border-radius: 10px; /* Coins arrondis de 10 pixels */
 	top: -20px;
 }
 .plat1 p {
 	position: relative;
 	color : black;
-	margin-left: 120px;
+	    margin-left: 91px;
 	top: -10px;
 }
 .bas h2 {
@@ -97,45 +97,46 @@ footer{
 	width: 200px;
 	height: 150px;
 	top: -213px;
-	margin-left: 507px;
+	    margin-left: 387px;
 	border-radius: 10px;
 }
 .plat2 p {
 	color:black;
 	position: relative;
 	top: -215px;
-	margin-left:500px;
+	    margin-left: 400px;
+
 } 
 
 .hor h2 {
    font-size: 30px;	
    position: relative;
-   top: -200px; 
-  margin-left: 658px;
+   top: -220px;
+    margin-left: 468px;
 }
 
 .hor p {
 	color: black;
 	position: relative;
 	top: -200px;
-	margin-left: 610px;
+	margin-left: 460px;
 }
 .maps h2 {
 	font-size: 30px;
 	position: relative;
-	margin-left: 125px;
-	top: -620px;
+	    margin-left: 81px;
+    top: -570px;
 }
 .maps p {
 	color: black;
-	margin-left: 120px;
-  top: -386px;
+	margin-left: 60px;
+   top: -346px;
   position: relative;
 }
 .maps img {
 	width: 350px;
-	margin-left: 70px;
-  	top: -640px;
+margin-left: 10px;
+    top: -590px;
 	position:relative;
 	border-radius: 10px;
 }
@@ -150,11 +151,9 @@ footer{
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-	margin-bottom: 20px;
-	width: 100%;
-	border-bottom: 2px solid #808080;
+	padding: 10px;
+	border-bottom: 3px solid #808080;
+	width: 107%;
 }
 /* switch pour changer le mode sombre / clair */
 #switch{
@@ -163,8 +162,8 @@ header {
   background-color: white;   /* Couleur du boutons */
      /* Utilise Flexbox pour centrer le contenu */
   position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-  margin-left: 1250px;
-  top: 30px;  
+  margin-left: 1550px;
+  
 }
 
 
@@ -265,11 +264,36 @@ header {
 }
 .menu {
 	display: none;
-	position: sticky;
+	position: absolute;
+	  top: 70px;
+	  right: 20px;
 	background-color: white;
-	border: black 1px solid;
+	border: black 2px solid;
 	padding: 15px;;
+	width: 280px;
+    height: 260px;
+	margin-left: 1300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 }
 .menu.active {
 	display:block;
 }
+.menu ul {
+	position: relative;
+	top: -200px;
+}
+ #but {
+    background: none;
+    border: none;
+	
+}
+ #but img {
+    transition: transform 0.3s ease;
+  }
+.menu details ul {
+	position: relative;
+    top: 0px;
+}
+
+ 
