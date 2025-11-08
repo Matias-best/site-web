@@ -294,154 +294,121 @@ header {
 }
 /*  Sur téléphone (max 768px) */
 @media screen and (max-width: 768px) {
-.com p {
-    color: black;
-    position: relative;
-    top: -460px;
-    margin-left: 86px;
-    font-size: 25px;
-    font-size: 25px;
-}
-.bas h2 {
-    font-size: 28px;
-    margin-left: 110px;
-    top: -20px;
-    position: relative;
-}
-.maps h2 {
-    font-size: 30px;
-    position: relative;
-    margin-left: 11px;
-    top: -660px;
-}
-.hor p {
-    color: black;
-    position: relative;
-    top: -200px;
-    margin-left: 230px;
-}
-.hor h2 {
-    font-size: 30px;
-    position: relative;
-    top: -190px;
-    margin-left: 208px;
-}
-
-.maps img {
-    width: 200px;
-    margin-left: 0px;
-    top: -690px;
-    position: relative;
-    border-radius: 10px;
-}
-.maps p {
-    color: black;
-    margin-left: 4px;
-    top: -506px;
-    position: relative;
+  body {
+    overflow-x: hidden;
     font-size: 16px;
-}
-.plat1 p {
-    position: relative;
-    color: black;
-    margin-left: 1px;
-    top: -10px;
-}
-.plat2 p {
-    color: black;
-    position: relative;
-    top: -195px;
-    margin-left: 190px;
-}
-.plat1 img {
-    position: relative;
-    width: 150px;
-    margin-left: 5px;
-    border-radius: 10px;
-    top: -20px;
-}
-.plat2 img {
-    position: relative;
-    width: 170px;
-    height: 130px;
-    top: -183px;
-    margin-left: 177px;
-    border-radius: 10px;
-}
-h1 {
-    position: relative;
-    color: white;
-    padding: 40px;
-    font-size: 20px;
-    margin-left: 50px;
-    top: 30px;
-    position: relative;
-}
-.haut p {
-    position: relative;
-    margin-left: 100px;
-    color: red;
-    top: -30px;
-    font-size: 20px;
-}
-.h2index {
-    position: relative;
-    top: -59px;
-    display: flex;
-    margin-left: 2px;
-    justify-content: center;
-    border: 1px solid black;
-    height: 5vh;
-    width: 26vw;
-    background-color: beige;
-    font-size: 22px;
-    border-radius: 10px;
-}
-.h2i {
-    position: relative;
-    top: -113px;
-    font-size: 18px;
-    border: 1px solid black;
-    height: 0vh;
-    width: 10vw;
-    background-color: beige;
-    margin-left: 110px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-.haut {
-    background-image: url(../../images/Fond-resto.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: -62px;
-}
-.bas {
-    background-color: beige;
-    display: flex;
-    width: 359px;
-    /* margin-left: 0px; */
-    flex-direction: column;
-    top: -130px;
-    position: relative;
-}
-#switch {
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    margin-left: 271px;
-}
-#but {
-    background: none;
-    border: none;
-}
+  }
 
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  #switch {
+    margin-left: 0;
+  }
+
+  .haut {
+    background-size: cover;
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: clamp(24px, 6vw, 40px);
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .haut p {
+    top: 0;
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .h2index, .h2i {
+    position: static;
+    width: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: clamp(16px, 4vw, 22px);
+    display: block;
+    text-align: center;
+  }
+
+  .bas {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .plat1, .plat2, .hor, .maps, .com {
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .plat1 img, .plat2 img, .maps img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .plat1 p, .plat2 p, .maps p, .hor p, .com p {
+    margin: 10px 0;
+    color: black;
+    font-size: 18px;
+  }
+
+  .maps h2, .hor h2, .bas h2 {
+    margin: 10px auto;
+    font-size: clamp(20px, 4vw, 26px);
+    text-align: center;
+    position: static;
+  }
+
+  .com a {
+    position: static;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .repas {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .menu {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    width: 80%;
+    height: auto;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  .menu ul {
+    top: 0;
+  }
+
+  .boisson-card .thumb {
+    width: 80%;
+  }
+
+  footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+  }
 }
  
