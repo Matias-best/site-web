@@ -2,6 +2,12 @@ body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
  
 }
+.site {
+  width: 1920px; /* largeur de référence de ton design */
+  transform-origin: top left;
+  transform: scale(1);
+}
+
 .haut{
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
 	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
@@ -65,8 +71,8 @@ h2{
 .bas{
 	background-color: beige;
 	display: flex;
-width: 712px;
-    margin-left: 491px; /* Largeur fixe du bloc beige */
+width: 727px;
+    margin-left: 589px; /* Largeur fixe du bloc beige */
 	flex-direction: column;
 
 }
@@ -162,7 +168,7 @@ header {
   background-color: white;   /* Couleur du boutons */
      /* Utilise Flexbox pour centrer le contenu */
   position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-      margin-left: 1590px;
+     margin-left: 1786px;
   
 }
 
@@ -292,166 +298,11 @@ header {
 	position: relative;
     top: 10px;
 }
-/*  Sur téléphone (max 768px) */
-/* === Grand écran (≥1200px) === */
-@media screen and (min-width: 1200px) {
-  .haut h1 {
-    font-size: 60px;
-    margin-left: 150px;
-  }
-  
-  .haut p {
-    font-size: 24px;
-    margin-left: 120px;
-    top: -80px;
-  }
-
-  .h2index, .h2i {
-    font-size: 30px;
-    padding: 20px;
-    margin-left: 150px;
-  }
-
-  .bas {
-    width: 80%;
-    margin: auto;
-  }
-
-  .plat1 img, .plat2 img, .maps img {
-    width: 250px;
-    height: auto;
-  }
-
-  .repas {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-  }
-
-  .title {
-    font-size: clamp(36px, 6vw, 72px);
+/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    transform: scale(calc(100vw / 1920));
   }
 }
 
-/* === Tablettes (768px - 1199px) === */
-@media screen and (max-width: 1199px) and (min-width: 768px) {
-  .haut h1 {
-    font-size: 50px;
-    margin-left: 50px;
-  }
-
-  .haut p {
-    font-size: 20px;
-    margin-left: 20px;
-    top: -50px;
-  }
-
-  .bas {
-    width: 90%;
-    margin: auto;
-  }
-
-  .repas {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  .plat1 img, .plat2 img, .maps img {
-    width: 200px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-}
-
-/* === Mobile / Galaxy (≤480px) === */
-@media screen and (max-width: 480px) {
-
-  body {
-    font-size: 16px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  #switch, #but {
-    margin-left: 0;
-    margin-top: 10px;
-    width: 35px;
-    height: 35px;
-  }
-
-  .haut {
-    background-size: cover;
-    padding: 20px 10px;
-    text-align: center;
-  }
-
-  .haut h1 {
-    font-size: 30px;
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  .haut p {
-    margin-left: 0;
-    top: 0;
-    font-size: 16px;
-  }
-
-  .h2index, .h2i {
-    margin-left: 0;
-    font-size: 18px;
-    height: auto;
-    width: auto;
-    padding: 10px;
-  }
-
-  .bas {
-    width: 95%;
-    margin: auto;
-  }
-
-  .plat1 img, .plat2 img, .maps img {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    top: 0;
-  }
-
-  .plat1 p, .plat2 p, .hor p, .maps p, .com p {
-    margin-left: 0;
-    top: 0;
-    font-size: 14px;
-  }
-
-  .repas {
-    grid-template-columns: 1fr; /* une seule colonne */
-    gap: 20px;
-    padding: 0 10px;
-  }
-
-  .title {
-    font-size: 28px;
-  }
-
-  .card .label, .card .subtitle {
-    font-size: 18px;
-  }
-
-  .menu {
-    top: 60px;
-    right: 10px;
-    width: 90%;
-    height: auto;
-    padding: 10px;
-  }
-
-  .menu ul {
-    top: 0;
-  }
-}
  
