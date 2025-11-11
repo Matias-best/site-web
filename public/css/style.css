@@ -2,7 +2,11 @@ body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
  
 }
-
+.site {
+  width: 1920px; /* largeur de référence de ton design */
+  transform-origin: top left;
+  transform: scale(1);
+}
 .haut{
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
 	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
