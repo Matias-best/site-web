@@ -307,7 +307,7 @@ header {
 
   .site {
       width: 1920px; /* 🔴 largeur de ton site "desktop" */
-      transform-origin: top center; /* 🔴 centre le dézoom horizontalement */
+      transform-origin: center; /* 🔴 centre le dézoom horizontalement */
       transform: scale(calc(100vw / 1920)); /* 🔴 dézoom pour rentrer dans la largeur du mobile */
       margin: 0 auto; /* 🔴 centre horizontalement */
   }
