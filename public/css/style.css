@@ -306,7 +306,7 @@ header {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* empêche le défilement horizontal */
+    overflow-x: hidden;
   }
 
   .site {
@@ -314,20 +314,21 @@ header {
     transform: none;
   }
 
+  /* En-tête */
   .haut {
     width: 100vw;
     height: auto;
     background-size: cover;
-    flex-direction: column;
-    align-items: center;
+    background-position: center;
     text-align: center;
+    align-items: center;
   }
 
   h1 {
     font-size: 40px;
     margin-left: 0;
-    top: 0;
     padding: 20px;
+    top: 0;
   }
 
   .haut p {
@@ -336,95 +337,62 @@ header {
     top: 0;
   }
 
-  .h2index, .h2i {
-    font-size: 24px;
-    width: 70%;
-    margin: 20px auto;
-    top: 0;
-  }
-
+  /* Section principale */
   .bas {
     width: 100vw;
-    display: flex;
-    flex-direction: row; /* 2 colonnes */
-    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
-    justify-content: space-around; /* espace régulier entre les colonnes */
-    align-items: flex-start;
     background-color: beige;
-  }
-
-  /* === Première colonne (plats) === */
-  .plat1, .plat2 {
-    width: 45%; /* chaque colonne prend environ la moitié */
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;          /* permet le retour à la ligne */
+    justify-content: center;  /* centre les colonnes */
+    align-items: flex-start;
     text-align: center;
   }
 
-  .plat1 img, .plat2 img {
+  /* === Chaque bloc (plats, horaires, maps) === */
+  .plat1, .plat2, .hor, .maps {
+    width: 45%;           /* deux colonnes */
+    margin: 10px;
+    position: relative;
+    top: 0;
+  }
+
+  .plat1 img, .plat2 img, .maps img {
     width: 100%;
     height: auto;
     margin: 10px auto;
     display: block;
-    top: 0;
     border-radius: 20px;
   }
 
-  .plat1 p, .plat2 p {
-    font-size: 20px;
+  .plat1 p, .plat2 p, .maps p, .hor p {
+    font-size: 18px;
     margin-left: 0;
     top: 0;
     color: black;
   }
 
-  /* === Section horaires à droite === */
-  .hor {
-    width: 45%;
-    margin: 10px;
-    text-align: center;
-  }
-
-  .hor h2 {
-    font-size: 28px;
-    margin-left: 0;
-    top: 0;
-  }
-
-  .hor p {
-    font-size: 18px;
-    margin-left: 0;
-    top: 0;
-  }
-
-  /* === Section carte/maps à gauche === */
-  .maps {
-    width: 45%;
-    margin: 10px;
-    text-align: center;
-  }
-
-  .maps h2 {
+  .bas h2, .maps h2, .hor h2 {
     font-size: 26px;
     margin-left: 0;
     top: 0;
+    color: black;
   }
 
-  .maps p {
-    font-size: 18px;
-    margin-left: 0;
-    top: 0;
+  /* Section horaires */
+  .hor {
+    order: 3;
   }
 
-  .maps img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  /* Section carte */
+  .maps {
+    order: 4;
   }
 
-  /* === Section contact === */
+  /* Section contact */
   .com {
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .com p {
@@ -434,19 +402,17 @@ header {
   }
 
   .com a {
-    top: 0;
+    margin: 10px auto;
     display: inline-block;
-    margin: 20px;
+    top: 0;
   }
 
-  /* === Menu déroulant === */
+  /* Menu déroulant */
   .menu {
     position: static;
     width: 90%;
     height: auto;
     margin: 10px auto;
-    top: 0;
-    right: 0;
   }
 
   .menu ul {
@@ -454,18 +420,17 @@ header {
     top: 0;
   }
 
-  /* === Bouton switch === */
+  /* Bouton switch */
   #switch {
-    margin-left: 0;
-    position: static;
-    display: block;
     margin: 10px auto;
+    display: block;
+    position: static;
   }
 
-  /* === Grille repas (2 colonnes sur mobile aussi) === */
+  /* Grille repas (2 colonnes aussi) */
   .wrap {
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
   }
 
   .repas {
@@ -476,12 +441,12 @@ header {
   }
 
   .card {
-    width: 95%;
+    width: 90%;
     padding: 10px;
   }
 
   .label, .subtitle {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
  
