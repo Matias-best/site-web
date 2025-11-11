@@ -318,47 +318,49 @@ header {
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
 
-    /* Supprime le scale et les décalages */
-    .site {
+        html, body {
         width: 100%;
-        transform: none;
+        height: 100%;
         margin: 0;
         padding: 0;
+        overflow-x: hidden; /* empêche de scroller horizontalement */
+        background-color: black; /* évite de voir du blanc sur les côtés */
     }
 
-    /* Mets les sections les unes sous les autres */
+    .site {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        transform: none !important; /* désactive ton ancien scale() */
+    }
+
     .haut, .bas {
         width: 100%;
+        min-height: 100vh; /* chaque section remplit l’écran */
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-    }
-
-    /* La section du haut prend tout l'écran */
-    .haut {
-        height: 100vh;
+        align-items: center;
+        text-align: center;
         background-size: cover;
         background-position: center;
-        text-align: center;
     }
 
-    /* Images adaptatives */
-    .bas img, .haut img {
-        width: 90%;
+    img {
+        max-width: 100%;
         height: auto;
-        margin: 10px 0;
+        display: block;
     }
 
-    /* Texte centré */
     h1, h2, p {
         text-align: center;
         margin: 10px;
     }
 
-    /* Supprime les margin-left inutiles */
     [style*="margin-left"] {
         margin-left: 0 !important;
     }
