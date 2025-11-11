@@ -298,13 +298,19 @@ header {
 	position: relative;
     top: 10px;
 }
-/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
-@media screen and (max-width: 1920px) {
+/* 🧭 Ajustement spécial pour les téléphones */
+@media screen and (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* empêche le scroll horizontal */
+    background-color: #faf8e6; /* adoucit les grands fonds blancs */
+  }
+
   .site {
-    transform: scale(calc(100vw / 1920));
-     overflow-x: hidden; /* 🔒 Cache tout dépassement horizontal à l’intérieur */
-  margin: 0 auto;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1920)); /* garde ton système de zoom */
+    overflow-x: hidden; /* évite tout débordement */
   }
 }
-
  
