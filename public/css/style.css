@@ -316,34 +316,9 @@ header {
     top: 10px;
 }
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
-@media screen and (max-width: 768px) {
-
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* empêche le défilement horizontal */
-  }
-
+@media screen and (max-width: 1920px) {
   .site {
-    width: 100%;
-    transform: none; /* enlève le zoom/décalage horizontal */
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Pour que les images et blocs remplissent bien l’écran */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* On recentre tout correctement */
-  .haut, .bas, .wrap {
-    width: 100%;
-    margin: 0 auto;
+    transform: scale(calc(100vw / 1920));
   }
 }
 
