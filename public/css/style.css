@@ -9,28 +9,30 @@ body{
   
 }
 .haut{
+	width: 100vw;
+    height: 100vh; /* plein écran */
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
-	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
-	background-repeat: no-repeat; /* Empêche l’image de se répéter */
+	background-size: cover; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
 	background-position: center; 
 	display:flex; /* Active Flexbox pour centrer les éléments à l’intérieur */
 	flex-direction: column;  /* Place les éléments à l’intérieur en colonne (verticalement) */	 
     align-items: center; /* Centre horizontalement les éléments */
 }
 .haut p {
-	position: relative;/* Permet de déplacer l’élément par rapport à sa position normale */
-	margin-left: 100px; /* Décale le paragraphe de 100px vers la droite */
-	color:red;
-	top: -80px; /* Fait "monter" le paragraphe de 80px */
-	font-size: 20px; /* Taille du texte à 20 pixels */
+	position: relative;
+    margin-left: 70px;
+    color: red;
+    top: 50px;
+    font-size: 40px;
 	
 }
 h1{
 	position: relative;
-	color: white; 
-	padding: 40px;  /* Ajoute de l’espace à l’intérieur autour du texte */
-	font-size: 50px;
-	margin-left: 100px; 
+    color: white;
+    padding: 40px;
+    font-size: 80px;
+    margin-left: 100px;
+    top: 70px;
 }
 
 h2{
@@ -38,32 +40,30 @@ h2{
 }
 .h2index{
 	position: relative;
-	top: -100px;
-	display: flex;   
-    margin-left: 100px;	
-    justify-content: center; /* Centre horizontalement le contenu */
-	border: 1px solid black; /* Ajoute une bordure noire d’un pixel */
-	height:5vh; /* Hauteur du bloc = 5% de la hauteur de l’écran */
-	width:5vw; /* Largeur du bloc = 5% de la largeur de l’écran */
-	background-color: beige; /* Fond beige */
-	font-size: 30px;
-	border-radius: 10px; /* Coins arrondis de 10 pixels */
+    top: 90px;
+    display: flex;
+    margin-left: 0px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: beige;
+    font-size: 40px;
+    border-radius: 10px;
+    width: 360px;
 }
 
 .h2i{
 	position: relative;
-	top: -170px;
-	font-size: 20px;
-	border: 1px solid black;
-	height:0vh; 
-	width:2vw;
-	background-color: beige;
-	margin-left: 220px;
-	padding: 20px;
-	display: flex;              
-    justify-content: center; 
-    align-items: center; /* Centre verticalement le contenu */
-	border-radius: 10px;
+    top: 110px;
+    font-size: 30px;
+    border: 1px solid black;
+    width: 20vw;
+    background-color: beige;
+    margin-left: -40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 .h2index:hover, .h2i:hover, .commande:hover {
     background-color: red;   /* la couleur du fond au survol de la souris */
@@ -71,88 +71,90 @@ h2{
 .bas{
 	background-color: beige;
 	display: flex;
-width: 727px;
-    margin-left: 589px; /* Largeur fixe du bloc beige */
-	flex-direction: column;
+width: 100vw;
 
-}
-footer{
-	text-align: center; /* Centre le texte du bas de page */
+flex-direction: column;
 }
 .plat1 img {
 	position: relative;
-	width: 200px; /* Largeur fixe de l’image */
-	margin-left: 75px; /* Décale l’image de 400 pixels vers la gauche */
-	border-radius: 10px; /* Coins arrondis de 10 pixels */
-	top: -20px;
+    width: 360px;
+    margin-left: 435px;
+    border-radius: 20px;
+    top: -20px;
 }
 .plat1 p {
 	position: relative;
-	color : black;
-	    margin-left: 91px;
-	top: -10px;
+    color: black;
+    margin-left: 471px;
+    top: -10px;
+    font-size: 30px;
 }
 .bas h2 {
-	 font-size: 30px;
-	 margin-left: 290px;
-	 top: -20px;
-  position: relative;
+	font-size: 40px;
+    margin-left: 840px;
+    top: -20px;
+    position: relative;
 }
 .plat2 img {
 	position: relative;
-	width: 200px;
-	height: 150px;
-	top: -213px;
-	    margin-left: 387px;
-	border-radius: 10px;
+    width: 330px;
+    height: 270px;
+    top: -363px;
+    margin-left: 1287px;
+    border-radius: 20px;
 }
 .plat2 p {
-	color:black;
-	position: relative;
-	top: -215px;
-	    margin-left: 400px;
+	color: black;
+    position: relative;
+    top: -375px;
+    margin-left: 1300px;
+    font-size: 30px;
 
 } 
 
 .hor h2 {
-   font-size: 30px;	
-   position: relative;
-   top: -220px;
-    margin-left: 468px;
+ font-size: 50px;
+    position: relative;
+    top: -240px;
+    margin-left: 1338px;
 }
 
 .hor p {
 	color: black;
-	position: relative;
-	top: -200px;
-	margin-left: 460px;
+    position: relative;
+    top: -200px;
+    margin-left: 1340px;
+    font-size: 30px;
 }
 .maps h2 {
-	font-size: 30px;
-	position: relative;
-	    margin-left: 81px;
-    top: -570px;
+	font-size: 40px;
+    position: relative;
+    margin-left: 451px;
+    top: -850px;
 }
 .maps p {
 	color: black;
-	margin-left: 60px;
-   top: -346px;
-  position: relative;
+   margin-left: 330px;
+    top: -496px;
+    position: relative;
+    font-size: 30px;
 }
 .maps img {
-	width: 350px;
-margin-left: 10px;
-    top: -590px;
-	position:relative;
-	border-radius: 10px;
+	width: 500px;
+   margin-left: 300px;
+    top: -880px;
+    position: relative;
+    border-radius: 20px;
 }
 
-.darkmode {
-    --base-color: #121212;                  /* Fond principal sombre */
-    --accent-color: #000000;                /* Couleur accent pour darkmode */
-    
-	background-color: var(--base-color); /* Applique la couleur principale au fond de la page */
-  color: var(--accent-color);                /* Applique la couleur du texte */
+.darkmode {   
+	background-color: black; /* Applique la couleur principale au fond de la page */
+     .bas {
+		background-color: black;
+	 }
+	 .maps p, .hor p, .plat2 p, .plat1 p, .bas h2, .com p {
+		color: white;
+	 }
 } 
 header {
 	display: flex;
@@ -171,23 +173,6 @@ header {
      margin-left: 1790px;
   
 }
-#switch1 {
-	border-radius: 50%;   /* Rend les boutons circulaire */
-  background-color: white;   /* Couleur du boutons */
-     /* Utilise Flexbox pour centrer le contenu */
-  position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-    margin-left: 960px;
-}
-#switch1 img:last-child{
-   	display:none;    /* Cache la dernière image  */
-}
-/* === Lorsque le mode sombre est activé === */
-.darkmode #switch1 img:first-child{
-    display:none;	                 /* Cache la première image  */
-}
-.darkmode #switch1 img:last-child{
-    display:block;	            /* Affiche la dernière image dans le mode sombre */
-}
 
 /* === Masquer la dernière image par défaut === */
 #switch img:last-child{
@@ -202,12 +187,11 @@ header {
 }
 
 .com p{
-	 color: black;
-	 position: relative;
-	top: -510px;
-  margin-left: 200px;
-  font-size: 25px;
-	 font-size: 25px;
+	color: black;
+    position: relative;
+    top: -510px;
+    margin-left: 700px;
+    font-size: 35px;
 }
 .com a{
    position: relative;
