@@ -9,16 +9,13 @@ body{
   transform-origin: top left;
 }
 .haut{
-	 width: 100%;
-    height: 100vh; /* plein écran */
-    background-image: url(../../images/Fond-resto.jpg);
-    background-size: cover; /* couvre tout l'écran */
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
+	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
+	background-repeat: no-repeat; /* Empêche l’image de se répéter */
+	background-position: center; 
+	display:flex; /* Active Flexbox pour centrer les éléments à l’intérieur */
+	flex-direction: column;  /* Place les éléments à l’intérieur en colonne (verticalement) */	 
+    align-items: center; /* Centre horizontalement les éléments */
 }
 .haut p {
 	position: relative;/* Permet de déplacer l’élément par rapport à sa position normale */
@@ -73,11 +70,10 @@ h2{
 }
 .bas{
 	background-color: beige;
- width: 100%;
-    margin-left: 0; /* supprime le décalage */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+width: 727px;
+    margin-left: 589px; /* Largeur fixe du bloc beige */
+	flex-direction: column;
 
 }
 footer{
@@ -304,12 +300,6 @@ header {
 }
 /* 🧭 Ajustement spécial pour les téléphones */
 @media screen and (max-width: 768px) {
-  body {
-      display: flex; /* 🔴 centre horizontal et vertical */
-      justify-content: center; /* 🔴 centre horizontal */
-      align-items: center; /* 🔴 centre vertical */
-      height: 100vh; /* 🔴 prend toute la hauteur de l’écran */
-  }
 
   .site {
       width: 1920px; /* 🔴 largeur de ton site "desktop" */
