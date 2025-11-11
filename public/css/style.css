@@ -1,9 +1,12 @@
 body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
-  
+ 
 }
-.site { 
+.site {
+  width: 1920px; /* largeur de référence de ton design */
   transform-origin: top left;
+  transform: scale(1);
+  
 }
 .haut{
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
@@ -295,12 +298,11 @@ header {
 	position: relative;
     top: 10px;
 }
-/* 🧭 Ajustement spécial pour les téléphones */
-@media screen and (max-width: 768px) {
+/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
+@media screen and (max-width: 1920px) {
   .site {
-     width: 1920px; 
-     transform-origin: top left;
-    transform: scale(calc(100vw / 1920)); /* garde ton système de zoom */
+    transform: scale(calc(100vw / 1920));
   }
 }
+
  
