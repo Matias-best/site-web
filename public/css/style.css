@@ -299,7 +299,7 @@ header {
 @media screen and (max-width: 768px) {
   .site {
      width: 1920px; 
-     transform-origin: top center; /* dézoom depuis le centre horizontal */
+     transform-origin: top left;
     transform: scale(calc(100vw / 1920)); /* garde ton système de zoom */
   }
 }
