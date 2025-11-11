@@ -304,7 +304,7 @@ header {
   body, html {
     width: 100%;
     height: 100%;
-    overflow-x: hidden; /* empêche les bandes blanches horizontales */
+  
     margin: 0;
     padding: 0;
   }
