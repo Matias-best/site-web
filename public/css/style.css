@@ -1,11 +1,8 @@
 body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
-
+  
 }
 .site { 
-   width: 100%;
-    max-width: 100%; /* prend toute la fenêtre */
-    margin: 0 auto;
   transform-origin: top left;
 }
 .haut{
@@ -300,12 +297,10 @@ header {
 }
 /* 🧭 Ajustement spécial pour les téléphones */
 @media screen and (max-width: 768px) {
-
   .site {
-      width: 1920px; /* 🔴 largeur de ton site "desktop" */
-      transform-origin: center; /* 🔴 centre le dézoom horizontalement */
-      transform: scale(calc(100vw / 1920)); /* 🔴 dézoom pour rentrer dans la largeur du mobile */
-      margin: 0 auto; /* 🔴 centre horizontalement */
+     width: 1920px; 
+     transform-origin: top center; /* dézoom depuis le centre horizontal */
+    transform: scale(calc(100vw / 1920)); /* garde ton système de zoom */
   }
 }
  
