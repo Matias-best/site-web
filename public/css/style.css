@@ -3,6 +3,7 @@ body{
   
 }
 .site { 
+   width: 100%;
   transform-origin: top left;
 }
 .haut{
@@ -297,10 +298,18 @@ header {
 }
 /* 🧭 Ajustement spécial pour les téléphones */
 @media screen and (max-width: 768px) {
+  body {
+      display: flex; /* 🔴 centre horizontal et vertical */
+      justify-content: center; /* 🔴 centre horizontal */
+      align-items: center; /* 🔴 centre vertical */
+      height: 100vh; /* 🔴 prend toute la hauteur de l’écran */
+  }
+
   .site {
-     width: 1920px; 
-     transform-origin: top center; /* dézoom depuis le centre horizontal */
-    transform: scale(calc(100vw / 1920)); /* garde ton système de zoom */
+      width: 1920px; /* 🔴 largeur de ton site "desktop" */
+      transform-origin: top center; /* 🔴 centre le dézoom horizontalement */
+      transform: scale(calc(100vw / 1920)); /* 🔴 dézoom pour rentrer dans la largeur du mobile */
+      margin: 0 auto; /* 🔴 centre horizontalement */
   }
 }
  
