@@ -1,14 +1,8 @@
 body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
+ 
 }
-.site {
- max-width: 100%;
-  margin: 0 auto;
-  transform: none;
-  transform-origin: unset;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
+
 .haut{
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
 	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
@@ -299,5 +293,17 @@ header {
 	position: relative;
     top: 10px;
 }
-
+/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
+@media screen and (max-width: 1920px) {
+  .site {
+    transform: scale(calc(100vw / 1920));
+  }
+}
+/* Et ajuste aussi pour les écrans plus grands */
+@media screen and (min-width: 1921px) {
+  .site {
+    transform: scale(calc(100vw / 1921));
+    
+  }
+}
  
