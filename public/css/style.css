@@ -1,14 +1,11 @@
 body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
-  overflow-x: hidden;
+  
 }
 .site {
   width: 1920px; /* largeur de référence de ton design */
   transform-origin: top left;
   transform: scale(1);
-  transform: scale(calc(100vw / 1920));
-  overflow-x: hidden; /* 🔒 Cache tout dépassement horizontal à l’intérieur */
-  margin: 0 auto;
 
 }
 .haut{
@@ -305,6 +302,8 @@ header {
 @media screen and (max-width: 1920px) {
   .site {
     transform: scale(calc(100vw / 1920));
+     overflow-x: hidden; /* 🔒 Cache tout dépassement horizontal à l’intérieur */
+  margin: 0 auto;
   }
 }
 
