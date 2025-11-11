@@ -1,8 +1,5 @@
 body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
- padding: 0;
-  overflow-x: hidden; /* empêche le défilement horizontal */
-  background-color: #faf8e6; /* couleur douce pour limiter le blanc pur */
 }
 .site {
  max-width: 100%;
@@ -302,17 +299,5 @@ header {
 	position: relative;
     top: 10px;
 }
-/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
-@media screen and (max-width: 1920px) {
-  .site {
-    transform: scale(calc(100vw / 1920));
-  }
-}
-/* Et ajuste aussi pour les écrans plus grands */
-@media screen and (min-width: 1921px) {
-  .site {
-    transform: scale(calc(100vw / 1921));
-    
-  }
-}
+
  
