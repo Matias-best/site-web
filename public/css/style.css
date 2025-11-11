@@ -318,52 +318,28 @@ header {
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
 
-        html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* empêche de scroller horizontalement */
-        background-color: black; /* évite de voir du blanc sur les côtés */
-    }
+       html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* empêche le scroll horizontal */
+  }
 
-    .site {
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        transform: none !important; /* désactive ton ancien scale() */
-    }
+  .site {
+    width: 100%;
+    transform: none; /* enlève le zoom qui décalait tout */
+    margin: 0;
+    padding: 0;
+  }
 
-    .haut, .bas {
-        width: 100%;
-        min-height: 100vh; /* chaque section remplit l’écran */
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-    }
+  .haut, .bas {
+    width: 100%;
+  }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    h1, h2, p {
-        text-align: center;
-        margin: 10px;
-    }
-
-    [style*="margin-left"] {
-        margin-left: 0 !important;
-    }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
  
