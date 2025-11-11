@@ -302,12 +302,11 @@ header {
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
 
- 
-  body, html {
+   body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* empêche le défilement horizontal */
   }
 
   .site {
@@ -315,21 +314,20 @@ header {
     transform: none;
   }
 
-  /* --- Partie haute --- */
   .haut {
     width: 100vw;
     height: auto;
     background-size: cover;
-    background-position: center;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
-  .haut h1 {
+  h1 {
     font-size: 40px;
     margin-left: 0;
-    padding: 20px;
     top: 0;
+    padding: 20px;
   }
 
   .haut p {
@@ -338,37 +336,36 @@ header {
     top: 0;
   }
 
-  /* --- Bande beige principale --- */
+  .h2index, .h2i {
+    font-size: 24px;
+    width: 70%;
+    margin: 20px auto;
+    top: 0;
+  }
+
   .bas {
-    background-color: beige;
     width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes fixes */
-    grid-template-areas:
-      "plat1 plat2"
-      "hor maps"
-      "com com";
-    justify-items: center;
-    align-items: start;
+    display: flex;
+    flex-direction: row; /* 2 colonnes */
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+    justify-content: space-around; /* espace régulier entre les colonnes */
+    align-items: flex-start;
+    background-color: beige;
+  }
+
+  /* === Première colonne (plats) === */
+  .plat1, .plat2 {
+    width: 45%; /* chaque colonne prend environ la moitié */
+    margin: 10px;
     text-align: center;
-    gap: 20px;
-    padding-bottom: 40px;
-  }
-
-  /* === Plats === */
-  .plat1 {
-    grid-area: plat1;
-    width: 90%;
-  }
-
-  .plat2 {
-    grid-area: plat2;
-    width: 90%;
   }
 
   .plat1 img, .plat2 img {
     width: 100%;
     height: auto;
+    margin: 10px auto;
+    display: block;
+    top: 0;
     border-radius: 20px;
   }
 
@@ -376,39 +373,55 @@ header {
     font-size: 20px;
     margin-left: 0;
     top: 0;
+    color: black;
   }
 
-  /* === Horaire et carte === */
+  /* === Section horaires à droite === */
   .hor {
-    grid-area: hor;
-    width: 90%;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
   }
 
-  .maps {
-    grid-area: maps;
-    width: 90%;
-  }
-
-  .hor h2, .maps h2 {
-    font-size: 26px;
+  .hor h2 {
+    font-size: 28px;
     margin-left: 0;
+    top: 0;
   }
 
-  .hor p, .maps p {
+  .hor p {
     font-size: 18px;
     margin-left: 0;
+    top: 0;
+  }
+
+  /* === Section carte/maps à gauche === */
+  .maps {
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .maps h2 {
+    font-size: 26px;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .maps p {
+    font-size: 18px;
+    margin-left: 0;
+    top: 0;
   }
 
   .maps img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
-    margin-top: 10px;
+    border-radius: 10px;
   }
 
-  /* === Commander === */
+  /* === Section contact === */
   .com {
-    grid-area: com;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -417,25 +430,58 @@ header {
   .com p {
     font-size: 22px;
     margin-left: 0;
+    top: 0;
   }
 
   .com a {
+    top: 0;
     display: inline-block;
-    margin-top: 15px;
+    margin: 20px;
   }
 
-  /* --- Autres éléments --- */
+  /* === Menu déroulant === */
   .menu {
     position: static;
     width: 90%;
+    height: auto;
+    margin: 10px auto;
+    top: 0;
+    right: 0;
+  }
+
+  .menu ul {
+    position: static;
+    top: 0;
+  }
+
+  /* === Bouton switch === */
+  #switch {
+    margin-left: 0;
+    position: static;
+    display: block;
     margin: 10px auto;
   }
 
-  #switch {
-    margin: 10px auto;
-    display: block;
-    position: static;
+  /* === Grille repas (2 colonnes sur mobile aussi) === */
+  .wrap {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .repas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes même sur mobile */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .card {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .label, .subtitle {
+    font-size: 22px;
   }
 }
-
  
