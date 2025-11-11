@@ -299,14 +299,14 @@ header {
 }
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 1920px) {
-  .wrapper {
+  .site {
     transform: scale(calc(100vw / 1920));
   }
 }
 /* Et ajuste aussi pour les écrans plus grands */
 @media screen and (min-width: 1921px) {
-  .wrapper {
-    transform: scale(calc(100vw / 1920));
+  .site {
+    transform: scale(calc(100vw / 1921));
   }
 }
  
