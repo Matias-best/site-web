@@ -302,7 +302,7 @@ header {
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
 
-   body, html {
+  body, html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -314,7 +314,6 @@ header {
     transform: none;
   }
 
-  /* En-tête */
   .haut {
     width: 100vw;
     height: auto;
@@ -324,7 +323,7 @@ header {
     align-items: center;
   }
 
-  h1 {
+  .haut h1 {
     font-size: 40px;
     margin-left: 0;
     padding: 20px;
@@ -337,77 +336,89 @@ header {
     top: 0;
   }
 
-  /* Section principale */
+  .h2index, .h2i {
+    font-size: 22px;
+    width: 60%;
+    margin: 10px auto;
+    top: 0;
+  }
+
+  /* === Bande beige === */
   .bas {
-    width: 100vw;
     background-color: beige;
     display: flex;
-    flex-wrap: wrap;          /* permet le retour à la ligne */
-    justify-content: center;  /* centre les colonnes */
+    flex-wrap: wrap; /* retour à la ligne auto */
+    justify-content: space-evenly;
     align-items: flex-start;
     text-align: center;
+    width: 100vw;
   }
 
-  /* === Chaque bloc (plats, horaires, maps) === */
-  .plat1, .plat2, .hor, .maps {
-    width: 45%;           /* deux colonnes */
-    margin: 10px;
-    position: relative;
-    top: 0;
+  /* === Plats === */
+  .plat1, .plat2 {
+    width: 45%; /* deux colonnes côte à côte */
+    margin-top: 20px;
   }
 
-  .plat1 img, .plat2 img, .maps img {
+  .plat1 img, .plat2 img {
     width: 100%;
     height: auto;
-    margin: 10px auto;
-    display: block;
+    margin: 0 auto;
     border-radius: 20px;
-  }
-
-  .plat1 p, .plat2 p, .maps p, .hor p {
-    font-size: 18px;
-    margin-left: 0;
     top: 0;
-    color: black;
   }
 
-  .bas h2, .maps h2, .hor h2 {
+  .plat1 p, .plat2 p {
+    font-size: 20px;
+    margin-left: 0;
+    top: 5px;
+  }
+
+  /* === Horaires & Carte côte à côte === */
+  .hor, .maps {
+    width: 45%;
+    margin-top: 30px;
+  }
+
+  .hor h2, .maps h2 {
     font-size: 26px;
     margin-left: 0;
     top: 0;
-    color: black;
   }
 
-  /* Section horaires */
-  .hor {
-    order: 3;
+  .hor p, .maps p {
+    font-size: 18px;
+    margin-left: 0;
+    top: 0;
   }
 
-  /* Section carte */
-  .maps {
-    order: 4;
+  .maps img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 15px;
   }
 
-  /* Section contact */
+  /* === Commander === */
   .com {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .com p {
     font-size: 22px;
-    margin-left: 0;
     top: 0;
+    margin-left: 0;
   }
 
   .com a {
-    margin: 10px auto;
     display: inline-block;
+    margin-top: 15px;
     top: 0;
   }
 
-  /* Menu déroulant */
+  /* === Menu et switch === */
   .menu {
     position: static;
     width: 90%;
@@ -415,38 +426,11 @@ header {
     margin: 10px auto;
   }
 
-  .menu ul {
-    position: static;
-    top: 0;
-  }
-
-  /* Bouton switch */
   #switch {
     margin: 10px auto;
     display: block;
     position: static;
   }
-
-  /* Grille repas (2 colonnes aussi) */
-  .wrap {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .repas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes même sur mobile */
-    gap: 20px;
-    justify-items: center;
-  }
-
-  .card {
-    width: 90%;
-    padding: 10px;
-  }
-
-  .label, .subtitle {
-    font-size: 20px;
-  }
 }
+
  
