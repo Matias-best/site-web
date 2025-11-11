@@ -7,7 +7,6 @@ body{
   transform-origin: top left;
   transform: scale(1);
 }
-
 .haut{
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
 	background-size: contain; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
@@ -168,7 +167,7 @@ header {
   background-color: white;   /* Couleur du boutons */
      /* Utilise Flexbox pour centrer le contenu */
   position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-     margin-left: 1786px;
+     margin-left: 1790px;
   
 }
 
@@ -206,7 +205,7 @@ header {
 }
 /* Gros titre chic*/ 
 .title{
-      font-size: clamp(36px, 6vw, 72px); /* Taille responsive : min 36px, max 72px */
+      font-size: 40px;
       text-align: center;
       color: white;
       
@@ -304,5 +303,10 @@ header {
     transform: scale(calc(100vw / 1920));
   }
 }
-
+/* Et ajuste aussi pour les écrans plus grands */
+@media screen and (min-width: 1921px) {
+  .wrapper {
+    transform: scale(calc(100vw / 1920));
+  }
+}
  
