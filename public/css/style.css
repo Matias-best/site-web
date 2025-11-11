@@ -171,7 +171,23 @@ header {
      margin-left: 1790px;
   
 }
-
+#switch1 {
+	border-radius: 50%;   /* Rend les boutons circulaire */
+  background-color: white;   /* Couleur du boutons */
+     /* Utilise Flexbox pour centrer le contenu */
+  position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
+    margin-left: 960px;
+}
+#switch1 img:last-child{
+   	display:none;    /* Cache la dernière image  */
+}
+/* === Lorsque le mode sombre est activé === */
+.darkmode #switch1 img:first-child{
+    display:none;	                 /* Cache la première image  */
+}
+.darkmode #switch1 img:last-child{
+    display:block;	            /* Affiche la dernière image dans le mode sombre */
+}
 
 /* === Masquer la dernière image par défaut === */
 #switch img:last-child{
@@ -202,7 +218,8 @@ header {
   /* Conteneur central */
  .wrap{
       max-width:  1100px; /* Largeur max du conteneur central */
-      margin: auto;  /* Centrage horizontal */
+      margin: auto;  /* Centrage horizontal */  
+	 margin-left: 210px;
 }
 /* Gros titre chic*/ 
 .title{
@@ -299,10 +316,52 @@ header {
     top: 10px;
 }
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
-@media screen and (max-width: 1920px) {
-  .site {
-    transform: scale(calc(100vw / 1920));
-  }
+@media screen and (max-width: 768px) {
+
+    /* Supprime le scale et les décalages */
+    .site {
+        width: 100%;
+        transform: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Mets les sections les unes sous les autres */
+    .haut, .bas {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* La section du haut prend tout l'écran */
+    .haut {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    /* Images adaptatives */
+    .bas img, .haut img {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* Texte centré */
+    h1, h2, p {
+        text-align: center;
+        margin: 10px;
+    }
+
+    /* Supprime les margin-left inutiles */
+    [style*="margin-left"] {
+        margin-left: 0 !important;
+    }
 }
 
  
