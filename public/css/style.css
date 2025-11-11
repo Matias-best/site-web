@@ -3,9 +3,12 @@ body{
  
 }
 .site {
-  width: 1920px; /* largeur de référence de ton design */
-  transform-origin: top left;
-  transform: scale(1);
+ max-width: 100%;
+  margin: 0 auto;
+  transform: none;
+  transform-origin: unset;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 .haut{
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
@@ -307,7 +310,7 @@ header {
 @media screen and (min-width: 1921px) {
   .site {
     transform: scale(calc(100vw / 1921));
-    padding: auto;
+    
   }
 }
  
