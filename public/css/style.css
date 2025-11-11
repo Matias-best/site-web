@@ -302,6 +302,7 @@ header {
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
 
+ 
   body, html {
     margin: 0;
     padding: 0;
@@ -314,6 +315,7 @@ header {
     transform: none;
   }
 
+  /* --- Partie haute --- */
   .haut {
     width: 100vw;
     height: auto;
@@ -336,93 +338,96 @@ header {
     top: 0;
   }
 
-  .h2index, .h2i {
-    font-size: 22px;
-    width: 60%;
-    margin: 10px auto;
-    top: 0;
-  }
-
-  /* === Bande beige === */
+  /* --- Bande beige principale --- */
   .bas {
     background-color: beige;
-    display: flex;
-    flex-wrap: wrap; /* retour à la ligne auto */
-    justify-content: space-evenly;
-    align-items: flex-start;
-    text-align: center;
     width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes fixes */
+    grid-template-areas:
+      "plat1 plat2"
+      "hor maps"
+      "com com";
+    justify-items: center;
+    align-items: start;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 40px;
   }
 
   /* === Plats === */
-  .plat1, .plat2 {
-    width: 45%; /* deux colonnes côte à côte */
-    margin-top: 20px;
+  .plat1 {
+    grid-area: plat1;
+    width: 90%;
+  }
+
+  .plat2 {
+    grid-area: plat2;
+    width: 90%;
   }
 
   .plat1 img, .plat2 img {
     width: 100%;
     height: auto;
-    margin: 0 auto;
     border-radius: 20px;
-    top: 0;
   }
 
   .plat1 p, .plat2 p {
     font-size: 20px;
     margin-left: 0;
-    top: 5px;
+    top: 0;
   }
 
-  /* === Horaires & Carte côte à côte === */
-  .hor, .maps {
-    width: 45%;
-    margin-top: 30px;
+  /* === Horaire et carte === */
+  .hor {
+    grid-area: hor;
+    width: 90%;
+  }
+
+  .maps {
+    grid-area: maps;
+    width: 90%;
   }
 
   .hor h2, .maps h2 {
     font-size: 26px;
     margin-left: 0;
-    top: 0;
   }
 
   .hor p, .maps p {
     font-size: 18px;
     margin-left: 0;
-    top: 0;
   }
 
   .maps img {
     width: 100%;
     height: auto;
-    margin-top: 10px;
     border-radius: 15px;
+    margin-top: 10px;
   }
 
   /* === Commander === */
   .com {
+    grid-area: com;
     width: 100%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .com p {
     font-size: 22px;
-    top: 0;
     margin-left: 0;
   }
 
   .com a {
     display: inline-block;
     margin-top: 15px;
-    top: 0;
   }
 
-  /* === Menu et switch === */
+  /* --- Autres éléments --- */
   .menu {
     position: static;
     width: 90%;
-    height: auto;
     margin: 10px auto;
   }
 
