@@ -2,11 +2,8 @@ body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
   
 }
-.site {
-  width: 1920px; /* largeur de référence de ton design */
+.site { 
   transform-origin: top left;
-  transform: scale(1);
-
 }
 .haut{
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
@@ -300,17 +297,21 @@ header {
 }
 /* 🧭 Ajustement spécial pour les téléphones */
 @media screen and (max-width: 768px) {
-  html, body {
+   body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* empêche le scroll horizontal */
-    background-color: #faf8e6; /* adoucit les grands fonds blancs */
+    ;
   }
 
   .site {
-    transform-origin: top left;
+     width: 1920px; 
+     transform-origin: top left;
     transform: scale(calc(100vw / 1920)); /* garde ton système de zoom */
     overflow-x: hidden; /* évite tout débordement */
+     position: relative;
+    left: 50%;
+    transform: translateX(-50%) scale(calc(100vw / 1920));
   }
 }
  
