@@ -152,9 +152,10 @@ flex-direction: column;
      .bas {
 		background-color: black;
 	 }
-	 .maps p, .hor p, .plat2 p, .plat1 p, .bas h2, .com p {
+	 .maps p, .hor p, .plat2 p, .plat1 p, .bas h2, .com p, .title, .label, .subtitle {
 		color: white;
 	 }
+  
 } 
 header {
 	display: flex;
@@ -209,7 +210,7 @@ header {
 .title{
       font-size: 40px;
       text-align: center;
-      color: white;
+      color: black;
       
 }
 /*pour les catégories */
@@ -246,14 +247,14 @@ header {
 }
 /* Titre de la catégorie*/
 .label{
-      color: white; /* Couleur accent / titres */
+      color: black; /* Couleur accent / titres */
       margin-top: 6px; 
 	  font-size:30px;
 }
 /* Texte sous-titre si besoin (muted) */
  .subtitle{
       font-size: 30px;
-      color: beige;  /* Couleur texte secondaire */
+      color: black;  /* Couleur texte secondaire */
       margin-top: 6px;
 }
  /* Pour la mise en page spécifique : Boissons grande colonne */
@@ -309,10 +310,6 @@ header {
     overflow-x: hidden; /* Empêche le défilement horizontal */
   }
 
-  .site {
-    width: 100vw;
-    transform: none; /* enlève le scale fixe */
-  }
 
   .haut {
     width: 100vw;
@@ -350,7 +347,7 @@ header {
     text-align: center;
   }
 
-  /* === Images plats === */
+ 
   .plat1 img, .plat2 img, .maps img {
     width: 80%;
     height: auto;
@@ -388,7 +385,7 @@ header {
     margin: 0 auto;
   }
 
-  /* === Partie contact === */
+ 
   .com p {
     font-size: 22px;
     margin-left: 0;
@@ -403,7 +400,7 @@ header {
     text-align: center;
   }
 
-  /* === Menu déroulant === */
+  
   .menu {
     position: static;
     width: 90%;
@@ -418,7 +415,7 @@ header {
     top: 0;
   }
 
-  /* === Bouton switch === */
+ 
   #switch {
     margin-left: 0;
     position: static;
@@ -426,7 +423,7 @@ header {
     margin: 10px auto;
   }
 
-  /* === Grille des repas === */
+  
   .wrap {
     margin: 0 auto;
     width: 100%;
@@ -434,7 +431,7 @@ header {
 
   .repas {
     display: grid;
-    grid-template-columns: 1fr; /* une seule colonne */
+    grid-template-columns: 1fr; 
     gap: 40px;
     justify-items: center;
   }
