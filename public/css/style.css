@@ -1,13 +1,8 @@
 body{
    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
- 
+    background-color: rgb(137, 81, 41);
 }
-.site {
-  width: 1920px; /* largeur de référence de ton design */
-  transform-origin: top left;
-  transform: scale(1);
-  
-}
+
 .haut{
 	width: 100vw;
     height: 100vh; /* plein écran */
@@ -65,11 +60,14 @@ h2{
     align-items: center;
     border-radius: 10px;
 }
+a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+  }
 .h2index:hover, .h2i:hover, .commande:hover {
     background-color: red;   /* la couleur du fond au survol de la souris */
 }
 .bas{
-	background-color: beige;
+	background-color: rgb(144, 213, 255);
 	display: flex;
 width: 100vw;
 
@@ -148,13 +146,24 @@ flex-direction: column;
 }
 
 .darkmode {   
-	background-color: black; /* Applique la couleur principale au fond de la page */
+  .menu {
+    background-color: rgb(240, 128, 128);
+  }
+  .card, .card1 {
+    background-color: rgb(240, 128, 128);
+  }
+  .label {
+    background-color: rgb(139, 0, 0);
+  }
      .bas {
-		background-color: black;
+		background-color: rgb(240, 128, 128);
 	 }
 	 .maps p, .hor p, .plat2 p, .plat1 p, .bas h2, .com p, .title, .label, .subtitle {
 		color: white;
 	 }
+   header {
+      background-color: beige;
+   }
   
 } 
 header {
@@ -162,7 +171,8 @@ header {
 	justify-content: space-between;
 	padding: 10px;
 	border-bottom: 3px solid #808080;
-	width: 99%;
+	width: 98vw;
+  background-color: gray;
 }
 /* switch pour changer le mode sombre / clair */
 #switch{
@@ -171,7 +181,7 @@ header {
   background-color: white;   /* Couleur du boutons */
      /* Utilise Flexbox pour centrer le contenu */
   position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-     margin-left: 1790px;
+    margin-left: 95%;
   
 }
 
@@ -211,6 +221,7 @@ header {
       font-size: 40px;
       text-align: center;
       color: black;
+      top : -10px;
       
 }
 /*pour les catégories */
@@ -226,7 +237,7 @@ header {
       align-items:center;
       padding: 22px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Ombre douce */
-     
+     background-color: rgb(144, 213, 255);
 }
 .card:hover{
       transform: translateY(-6px) scale(1.01);  /* Légère montée + zoom */
@@ -247,9 +258,12 @@ header {
 }
 /* Titre de la catégorie*/
 .label{
-      color: black; /* Couleur accent / titres */
+      color: white; /* Couleur accent / titres */
       margin-top: 6px; 
 	  font-size:30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(6, 6, 155);
 }
 /* Texte sous-titre si besoin (muted) */
  .subtitle{
@@ -266,6 +280,10 @@ header {
       width: 48%;
 	  aspect-ratio: 4/4;
 }
+.boisson-card .label{
+  position: relative;
+     top: 520px;
+}
 
 .menu {
 	display: none;
@@ -275,19 +293,22 @@ header {
 	background-color: white;
 	border: black 2px solid;
 	padding: 15px;;
-	width: 280px;
-    height: 260px;
+	      width: 294px;
+     height: 266px;
+
 	margin-left: 1300px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 	border-radius: 10px;
+  background-color: rgb(144, 213, 255);;
 }
 .menu.active {
 	display:block;
 }
 .menu ul {
 	position: relative;
-	top: -200px;
+	top: -278px;
 }
+
  #but {
     background: none;
     border: none;
@@ -299,6 +320,39 @@ header {
 .menu details ul {
 	position: relative;
     top: 10px;
+}
+.label1{
+   font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    color : white;
+    top: -180px;
+    position: relative;
+    margin-right: 200px;
+}
+.p1{
+  position: relative;
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    top: -190px;
+          margin-left: 300px;
+}
+.thumb1{
+   margin-right: 200px;
+    position: relative;
+      top: 40px;
+      
+} 
+.card1{  display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Ombre douce */
+     height: 40vh;
+     background-color: rgb(144, 213, 255);
+     
 }
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
