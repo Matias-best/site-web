@@ -355,17 +355,37 @@ header {
      
 }
 footer {
-  position: relative;
-  top: -400px
+  display: flex;
+  flex-direction: column;
 }
 .droite{
   font-size: 30px; 
   font-weight: 10;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column ;
 }
 .style{
+  display:flex ;
   border:2px solid black;
-  margin-left : 175px;
   background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+
+  width: 12vw;
+}
+.droiter
+{
+font-size: 35px;
+  top: -100px;
+  position: relative;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
 }
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
