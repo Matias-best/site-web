@@ -21,6 +21,7 @@ body{
     font-size: 40px;
 	
 }
+
 h1{
 	position: relative;
     color: white;
@@ -304,10 +305,7 @@ header {
 .menu.active {
 	display:block;
 }
-.menu ul {
-	position: relative;
-	top: -278px;
-}
+
 
  #but {
     background: none;
@@ -322,36 +320,39 @@ header {
     top: 10px;
 }
 .label1{
-   font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes', cursive;
     font-size: 32px;
-    color : white;
-    top: -180px;
+    color: white;
+    top: -320px;
     position: relative;
-    margin-right: 200px;
+    margin-right: -20px;
 }
 .p1{
-  position: relative;
-    font-size: 20px;
+ position: relative;
+    font-size: 29px;
     color: black;
-    margin-top: 10px;
     text-align: center;
     font-family: 'Great Vibes', cursive;
-    top: -190px;
-          margin-left: 300px;
+    top: -160px;
+    margin-left: 351px;
 }
+
 .thumb1{
-   margin-right: 200px;
+  margin-right: 1480px;
     position: relative;
-      top: 40px;
-      
+    top: -10px;
 } 
-.card1{  display:flex;
-      flex-direction:column;
-      align-items:center;
-      padding: 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Ombre douce */
-     height: 40vh;
-     background-color: rgb(144, 213, 255);
+
+.card1{ display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    height: 20vh;
+    background-color: rgb(144, 213, 255);
+    width: 98vw;
+    margin: 20px;
+    margin-left: -1px;
      
 }
 footer {
@@ -386,6 +387,9 @@ font-size: 35px;
   margin: auto;
   flex-direction: column;
   justify-content: center;
+}
+.repas1{
+  flex-direction: column;
 }
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
