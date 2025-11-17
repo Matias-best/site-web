@@ -354,6 +354,19 @@ header {
      background-color: rgb(144, 213, 255);
      
 }
+footer {
+  position: relative;
+  top: -400px
+}
+.droite{
+  font-size: 30px; 
+  font-weight: 10;
+}
+.style{
+  border:2px solid black;
+  margin-left : 175px;
+  background-color: white;
+}
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 768px) {
 
