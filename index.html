@@ -4,10 +4,11 @@
 		<link rel="stylesheet" href= "public/css/style.css">
 		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		  <meta name="description" content="Bienvenue sur le site de notre restaurant. Découvrez nos plats faits maison et commandez en ligne.">
-		
+		<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="logo.png">
 		<meta charset="utf-8">
 		<title>cuisine</title>
-		
+
 	</head>
 	
 	<body>
@@ -94,8 +95,29 @@
 				<a href="public/html/Carte.html"><h2>Carte</h2></a>
 			</nav>
 		</div>
-	<footer> <!-- le pied de page -->
 		
+	<footer> <!-- le pied de page -->
+		  <h3 class="droiter">Nous contacter</h3>		
+		<form class ="style"id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+			<p>
+				<label  class="droite">Prénom</label><input id="prenom" type="text" name="prenom" value=" ">
+				<label class="droite">Nom</label><input id="nom" type="text" name="nom" value=" ">
+	  
+		<label  class="droite">E-mail&nbsp;:</label>
+      <input type="email" id="mail" name="user_mail" />
+ 
+	<label class="droite" >Laissez un message&nbsp;:</label>
+      <textarea id="msg" name="user_message"></textarea>
+		<input  class="droite" type="submit" value="Envoyer">
+
+ </div><br>
+			</p>
+	
+    
+      
+    
+      
+</form>
 	</footer>
 </div>
 <script src="local-seo.js"></script>
