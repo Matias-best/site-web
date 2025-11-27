@@ -3,6 +3,10 @@ body{
     background-color: rgb(137, 81, 41);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .haut{
 	width: 100vw;
     height: 100vh; /* plein écran */
@@ -146,58 +150,6 @@ flex-direction: column;
     border-radius: 20px;
 }
 
-.darkmode {   
-  .menu {
-    background-color: rgb(240, 128, 128);
-  }
-  .card, .card1 {
-    background-color: rgb(240, 128, 128);
-  }
-  .label {
-    background-color: rgb(139, 0, 0);
-  }
-     .bas {
-		background-color: rgb(240, 128, 128);
-	 }
-	 .maps p, .hor p, .plat2 p, .plat1 p, .bas h2, .com p, .title, .label, .subtitle {
-		color: white;
-	 }
-   header {
-      background-color: beige;
-   }
-  
-} 
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
-	border-bottom: 3px solid #808080;
-	width: 98vw;
-  background-color: gray;
-}
-/* switch pour changer le mode sombre / clair */
-#switch{
-   
-  border-radius: 50%;   /* Rend les boutons circulaire */
-  background-color: white;   /* Couleur du boutons */
-     /* Utilise Flexbox pour centrer le contenu */
-  position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
-    margin-left: 95%;
-  
-}
-
-/* === Masquer la dernière image par défaut === */
-#switch img:last-child{
-   	display:none;    /* Cache la dernière image  */
-}
-/* === Lorsque le mode sombre est activé === */
-.darkmode #switch img:first-child{
-    display:none;	                 /* Cache la première image  */
-}
-.darkmode #switch img:last-child{
-    display:block;	            /* Affiche la dernière image dans le mode sombre */
-}
-
 .com p{
 	color: black;
     position: relative;
@@ -286,39 +238,7 @@ header {
      top: 520px;
 }
 
-.menu {
-	display: none;
-	position: absolute;
-	  top: 70px;
-	  right: 20px;
-	background-color: white;
-	border: black 2px solid;
-	padding: 15px;;
-	      width: 294px;
-     height: 266px;
 
-	margin-left: 1300px;
-	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-	border-radius: 10px;
-  background-color: rgb(144, 213, 255);;
-}
-.menu.active {
-	display:block;
-}
-
-
- #but {
-    background: none;
-    border: none;
-	
-}
- #but img {
-    transition: transform 0.3s ease;
-  }
-.menu details ul {
-	position: relative;
-    top: 10px;
-}
 .label1{
   font-family: 'Great Vibes', cursive;
     font-size: 32px;
@@ -391,148 +311,5 @@ font-size: 35px;
 .repas1{
   flex-direction: column;
 }
-/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
-@media screen and (max-width: 768px) {
 
-  body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
-  }
-
-
-  .haut {
-    width: 100vw;
-    height: auto;
-    background-size: cover;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 40px;
-    margin-left: 0;
-    top: 0;
-    padding: 20px;
-  }
-
-  .haut p {
-    font-size: 20px;
-    margin-left: 0;
-    top: 0;
-  }
-
-  .h2index, .h2i {
-    font-size: 24px;
-    width: 80%;
-    margin: 20px auto;
-    top: 0;
-  }
-
-  .bas {
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
- 
-  .plat1 img, .plat2 img, .maps img {
-    width: 80%;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-    top: 0;
-  }
-
-  .plat1 p, .plat2 p, .maps p {
-    font-size: 20px;
-    margin-left: 0;
-    top: 0;
-  }
-
-  .bas h2, .maps h2, .hor h2 {
-    font-size: 28px;
-    margin-left: 0;
-    top: 0;
-    text-align: center;
-  }
-
-  .hor p {
-    font-size: 18px;
-    margin-left: 0;
-    top: 0;
-    text-align: center;
-  }
-
-  .maps {
-    text-align: center;
-  }
-
-  .maps img {
-    width: 90%;
-    margin: 0 auto;
-  }
-
- 
-  .com p {
-    font-size: 22px;
-    margin-left: 0;
-    top: 0;
-    text-align: center;
-  }
-
-  .com a {
-    top: 0;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
-  }
-
-  
-  .menu {
-    position: static;
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-    top: 0;
-    right: 0;
-  }
-
-  .menu ul {
-    position: static;
-    top: 0;
-  }
-
- 
-  #switch {
-    margin-left: 0;
-    position: static;
-    display: block;
-    margin: 10px auto;
-  }
-
-  
-  .wrap {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .repas {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 40px;
-    justify-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  .label, .subtitle {
-    font-size: 22px;
-  }
-}
  
