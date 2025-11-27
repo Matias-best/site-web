@@ -40,7 +40,6 @@ h2{
 }
 .h2index{
 	position: relative;
-    top: 90px;
     display: flex;
     margin-left: 0px;
     justify-content: center;
@@ -48,18 +47,14 @@ h2{
     background-color: beige;
     font-size: 40px;
     border-radius: 10px;
-    width: 360px;
 }
 
 .h2i{
 	position: relative;
-    top: 110px;
-    font-size: 30px;
+    font-size: 40px;
     border: 1px solid black;
     width: 20vw;
     background-color: beige;
-    margin-left: -40px;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
