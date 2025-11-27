@@ -1,0 +1,84 @@
+.darkmode {   
+  .menu {
+    background-color: rgb(240, 128, 128);
+  }
+  .card, .card1 {
+    background-color: rgb(240, 128, 128);
+  }
+  .label {
+    background-color: rgb(139, 0, 0);
+  }
+     .bas {
+		background-color: rgb(240, 128, 128);
+	 }
+	 .maps p, .hor p, .plat2 p, .plat1 p, .bas h2, .com p, .title, .label, .subtitle {
+		color: white;
+	 }
+   header {
+      background-color: beige;
+   }
+  
+} 
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 3px solid #808080;
+	width: 98vw;
+  background-color: gray;
+}
+/* switch pour changer le mode sombre / clair */
+#switch{
+   
+  border-radius: 50%;   /* Rend les boutons circulaire */
+  background-color: white;   /* Couleur du boutons */
+     /* Utilise Flexbox pour centrer le contenu */
+  position: relative;  /* Fixé à l'écran, reste visible en scrollant */           
+    margin-left: 95%;
+  
+}
+
+/* === Masquer la dernière image par défaut === */
+#switch img:last-child{
+   	display:none;    /* Cache la dernière image  */
+}
+/* === Lorsque le mode sombre est activé === */
+.darkmode #switch img:first-child{
+    display:none;	                 /* Cache la première image  */
+}
+.darkmode #switch img:last-child{
+    display:block;	            /* Affiche la dernière image dans le mode sombre */
+}
+.menu {
+	display: none;
+	position: absolute;
+	  top: 70px;
+	  right: 20px;
+	background-color: white;
+	border: black 2px solid;
+	padding: 15px;;
+	      width: 294px;
+     height: 266px;
+
+	margin-left: 1300px;
+	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+  background-color: rgb(144, 213, 255);;
+}
+.menu.active {
+	display:block;
+}
+
+
+ #but {
+    background: none;
+    border: none;
+	
+}
+ #but img {
+    transition: transform 0.3s ease;
+  }
+.menu details ul {
+	position: relative;
+    top: 10px;
+}

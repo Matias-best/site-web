@@ -1,0 +1,144 @@
+/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
+@media screen and (max-width: 768px) {
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+  }
+
+
+  .haut {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-left: 0;
+    top: 0;
+    padding: 20px;
+  }
+
+  .haut p {
+    font-size: 20px;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .h2index, .h2i {
+    font-size: 24px;
+    width: 80%;
+    margin: 20px auto;
+    top: 0;
+  }
+
+  .bas {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+ 
+  .plat1 img, .plat2 img, .maps img {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    top: 0;
+  }
+
+  .plat1 p, .plat2 p, .maps p {
+    font-size: 20px;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .bas h2, .maps h2, .hor h2 {
+    font-size: 28px;
+    margin-left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  .hor p {
+    font-size: 18px;
+    margin-left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  .maps {
+    text-align: center;
+  }
+
+  .maps img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+ 
+  .com p {
+    font-size: 22px;
+    margin-left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  .com a {
+    top: 0;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+  }
+
+  
+  .menu {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    top: 0;
+    right: 0;
+  }
+
+  .menu ul {
+    position: static;
+    top: 0;
+  }
+
+ 
+  #switch {
+    margin-left: 0;
+    position: static;
+    display: block;
+    margin: 10px auto;
+  }
+
+  
+  .wrap {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .repas {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .label, .subtitle {
+    font-size: 22px;
+  }
+}
