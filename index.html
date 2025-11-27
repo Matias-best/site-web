@@ -50,7 +50,7 @@
 				</div>
 			</section>
 	<div class="haut">
-			<h1> <i>Bienvenue dans<br>notre restaurant !</i> </h1>
+			<h1 id="haut"> <i>Bienvenue dans<br>notre restaurant !</i> </h1>
 		      <p> Découvrez nos plats faits maison </p>
 	    <nav>
 				<ul>
@@ -97,29 +97,31 @@
 				<a href="public/html/Carte.html"><h2>Carte</h2></a>
 			</nav>
 		</div>
-		
+		<a href="#haut" class="btn-anchor">
+		<button>
+				<img src="https://svgsilh.com/svg/147751.svg" width="40" height="40" alt="fleche">
+		</button>
+		</a>
 	<footer> <!-- le pied de page -->
+<<<<<<< HEAD
 		  <h3 class="droiter">Nous contacter</h3>		
 		<form class ="style" id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+=======
+		  <h3 class="droite" id="selection-contact">Nous contacter</h3>		
+		<form class ="style"id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+>>>>>>> a66798229748e4ca940a70c7f22478bd93ac8371
 			<p>
 				<label  class="droite">Prénom</label><input id="prenom" type="text" name="prenom" value=" ">
 				<label class="droite">Nom</label><input id="nom" type="text" name="nom" value=" ">
 	  
-		<label  class="droite">E-mail&nbsp;:</label>
-      <input type="email" id="mail" name="user_mail" />
+				<label  class="droite">E-mail&nbsp;:</label>
+      			<input type="email" id="mail" name="user_mail" />
  
-	<label class="droite" >Laissez un message&nbsp;:</label>
-      <textarea id="msg" name="user_message"></textarea>
-		<input  class="droite" type="submit" value="Envoyer">
-
- </div><br>
+				<label class="droite" >Laissez un message&nbsp;:</label>
+     			<textarea id="msg" name="user_message"></textarea>
+				<input  class="droite" type="submit" value="Envoyer">
 			</p>
-	
-    
-      
-    
-      
-</form>
+		</form>
 	</footer>
 </div>
 <script src="local-seo.js"></script>

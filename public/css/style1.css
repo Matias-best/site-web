@@ -17,6 +17,7 @@
    header {
       background-color: beige;
    }
+<<<<<<< HEAD
    .plat1 img {
   border-radius : 50%;
   }
@@ -26,6 +27,10 @@
     margin-left: 880px;
     top: -210px;
     font-size: 30px;
+=======
+   
+
+>>>>>>> a66798229748e4ca940a70c7f22478bd93ac8371
   
 }
 .plat2 img
