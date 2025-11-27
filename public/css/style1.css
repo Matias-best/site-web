@@ -17,7 +17,6 @@
    header {
       background-color: beige;
    }
-<<<<<<< HEAD
    .plat1 img {
   border-radius : 50%;
   }
@@ -27,12 +26,7 @@
     margin-left: 880px;
     top: -210px;
     font-size: 30px;
-=======
-   
-
->>>>>>> a66798229748e4ca940a70c7f22478bd93ac8371
-  
-}
+  }
 .plat2 img
 {
     border-radius : 50%;
@@ -84,13 +78,13 @@
   margin-left: 291px;
   top: -403px;
 }
-com p {
+  .com p {
   color: black;
   position: relative;
   top: -384px;
   margin-left: 657px;
   font-size: 35px;
-}
+  }
 .maps h2 {
   font-size: 51px;
     margin-left: 260px;
