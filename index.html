@@ -50,7 +50,7 @@
 				</div>
 			</section>
 	<div class="haut">
-			<h1> <i>Bienvenue dans<br>notre restaurant !</i> </h1>
+			<h1 id="haut"> <i>Bienvenue dans<br>notre restaurant !</i> </h1>
 		      <p> Découvrez nos plats faits maison </p>
 	    <nav>
 				<ul>
@@ -97,9 +97,13 @@
 				<a href="public/html/Carte.html"><h2>Carte</h2></a>
 			</nav>
 		</div>
-		
+		<a href="#haut" class="btn-anchor">
+		<button>
+				<img src="https://svgsilh.com/image/147751.html" width="40" height="40" alt="fleche">
+		</button>
+		</a>
 	<footer> <!-- le pied de page -->
-		  <h3 class="droiter">Nous contacter</h3>		
+		  <h3 class="droite" id="selection-contact">Nous contacter</h3>		
 		<form class ="style"id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
 			<p>
 				<label  class="droite">Prénom</label><input id="prenom" type="text" name="prenom" value=" ">
@@ -112,7 +116,17 @@
      			<textarea id="msg" name="user_message"></textarea>
 				<input  class="droite" type="submit" value="Envoyer">
 			</p>
+<<<<<<< HEAD
 		</form>
+=======
+
+	
+    
+      
+    
+      
+</form>
+>>>>>>> 0ebaba4dbc93766c2b61ece520ade372c8dbf34b
 	</footer>
 </div>
 <script src="local-seo.js"></script>
