@@ -15,7 +15,7 @@
 		color: white;
 	 }
    header {
-      background-color: beige;
+      background-color: rgb(184, 22, 178);
    }
    .plat1 img {
   border-radius : 50%;
@@ -33,7 +33,7 @@
     position: relative;
     color: black;
     margin-left: 480px;
-    top: 40px;
+    top: 30px;
     font-size: 30px;
 }
 .plat2 p {
@@ -64,7 +64,11 @@
   position: relative;
   border-radius: 20px;
 }
-
+.thumb
+{
+ position: relative;
+  border-radius: 50%;
+}
 .maps p {
   color: black;
   margin-left: 742px;
@@ -115,6 +119,24 @@
   flex-direction: column;
   justify-content: center;
 }
+.thumb img {
+  width: 100%;
+  transition: transform .4s ease;
+  position: relative;
+  border-radius: 20px
+}
+.card 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  background-color: rgb(255, 144, 144);
+  border-radius: 50%;
+}
+  
+  
 }
 
 header {
