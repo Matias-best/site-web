@@ -13,58 +13,58 @@
 	}
 	.maps p, .hor p, .plat2 p, .plat1 p, .bas h2, .com p, .title, .label, .subtitle {
 		color: white;
-<<<<<<< HEAD
-	 }
-   header {
-      background-color: rgb(184, 22, 178);
-   }
-   .plat1 img {
-  border-radius : 50%;
-=======
 	}
   header {
     background-color: beige;
   }
   .plat1 img {
+    position: relative;
     border-radius : 50%;
->>>>>>> 2bd653973030356e076dfb6cd87388186c7dd806
+    width: 20vw;
+    margin-left: 40vw;
+    top: 7vw;
   }
   .plat1 p {
     position: relative;
     color: black;
-    margin-left: 880px;
-    top: -210px;
-    font-size: 30px;
+    margin-left: 62vw;
+    top: -7vw;
+    font-size: 2vw;
   }
-  .plat2 img {
+  .plat2 img
+  {
     border-radius : 50%;
     position: relative;
     color: black;
-    margin-left: 480px;
-    top: 30px;
-    font-size: 30px;
+    margin-left: 40vw;
+    top: 2vw;
+    font-size: 2vw;
   }
-  .plat2 p {
+  .plat2 p 
+  {
     position: relative;
     color: black;
-    margin-left: 880px;
-    top: -90px;
-    font-size: 30px;
-}
-  .hor h2 {
-    font-size: 50px;
-    position: relative;
-    top: -42px;
-    margin-left: 484px;
+    margin-left: 61vw;
+    top: -10vw;
+    font-size: 2vw;
   }
-  .hor p {
-<<<<<<< HEAD
-  color: black;
-  position: relative;
-  top: -165px;
-  margin-left: 824px;
-  font-size: 30px;
-}
+  .hor h2 
+  {
+    font-size: 8vw;
+    width: 20vw;
+    margin-left: 40vw;
+    border-radius: 20%;
+    top: 7vw;
+  }
+  .hor p 
+  {
+
+    color: black;
+    position: relative;
+    top: 0vw;
+    margin-left: 40vw;
+    font-size: 3vw;
+  }
 .maps img {
   width: 500px;
   margin-left: 162px;
@@ -84,73 +84,73 @@
   position: relative;
   font-size: 37px;
 }
-.maps h2 {
-  font-size: 40px;
+.maps h2 
+{
+  font-size: 6vw;
+  margin-left: 22vw;
+  top: -4vw;
   position: relative;
-  margin-left: 291px;
-  top: -403px;
 }
   .com p {
   color: black;
   position: relative;
-  top: -384px;
-  margin-left: 657px;
-  font-size: 35px;
-=======
-    color: black;
-    position: relative;
-    top: -165px;
-    margin-left: 824px;
-    font-size: 30px;
->>>>>>> 2bd653973030356e076dfb6cd87388186c7dd806
+  top: -9vw;
+  margin-left: 4vw;
+  font-size: 3vw;
   }
-  .maps img {
-    width: 500px;
-    margin-left: 162px;
-    top: -490px;
+  .maps img
+  {
+    width: 35vw;
+    margin-left: 16vw;
+    top: -18vw;
     position: relative;
-    border-radius: 20px;
+    border-radius: 40%;
+  }
+.maps p 
+  {
+    color: black;
+    margin-left: 55vw;
+    top: -1vw;
+    position: relative;
+    font-size: 3vw;
   }
 
-  .maps p {
-    color: black;
-    margin-left: 742px;
-    top: -296px;
+.style 
+{
+  display: flex;
+  border: 2px solid black;
+  background-color: white;
+  margin: auto;
+  width: 14vw;
+  top: -34vw;
+  position: relative;
+}
+
+  .maps h2 
+  {
     position: relative;
-    font-size: 37px;
-  }
-  .maps h2 {
-    font-size: 40px;
-    position: relative;
-    margin-left: 291px;
-    top: -403px;
+    font-size: 5vw;
+    margin-left: 18vw;
+    top: -4vw;
   }
   .com p {
     color: black;
     position: relative;
-    top: -384px;
-    margin-left: 657px;
-    font-size: 35px;
+    top: -17vw;
+    margin-left: 5vw;
+    font-size: 3vw;
   }
-  .maps h2 {
-    font-size: 51px;
-    margin-left: 260px;
-    top: -391px;
+ 
+  .com h2 
+  {
+    color: black;
+    font-size: 3vw;
+    margin-left: 63vw;
+    top: 10vw;
     position: relative;
-  }
-  .com h2 {
-      display: flex;
-      color: black;
-      font-size: 51px;
-      margin-left: 920px;
-      top: 61px;
-      position: relative;
-      border:2px solid black;
-      background-color: white;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 12vw;
+    border: 2px solid black;
+    background-color: white;
+    width: 11vw;
   }
   .droiter{
     font-size: 50px;
@@ -160,7 +160,6 @@
     margin: auto;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center;
      width: 12vw;
 }
@@ -183,15 +182,21 @@
 .card 
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   padding: 22px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
   background-color: rgb(255, 144, 144);
-  border-radius: 50%;
+  border-radius: 30%;
 }
-  
+.subtitle 
+{
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+  padding: 2vw;
+}
 
+}
 header {
 	display: flex;
     justify-content: flex-end;
