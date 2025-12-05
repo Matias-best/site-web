@@ -1,19 +1,23 @@
-body{
-   margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
+body
+{
+    margin: 0; /* Supprime la marge par défaut du navigateur autour de la page */
     background-color: rgb(137, 81, 41);
     overflow-x: hidden;
 }
-nav img {
-   display: flex;
+nav img 
+{
+    display: flex;
     width: 4vw;
     margin-right: 89vw;
     height: 3vw;
 }
-html {
-  scroll-behavior: smooth;
+html 
+{
+    scroll-behavior: smooth;
 }
 
-.haut{
+.haut
+{
 	width: 100%;
     height: 100vh; /* plein écran */
 	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
@@ -25,7 +29,8 @@ html {
     text-align: center;
     padding: 20px;
 }
-.haut p {
+.haut p 
+{
 	position: relative;
     color: red;
     top: -12vh;
@@ -33,54 +38,64 @@ html {
 	
 }
 
-.haut h1{
+.haut h1
+{
     color: white;
     font-size: 5vw;
 }
 
-h2{
+h2
+{
 	color: black;	
-      font-size: 1vw;
-      text-align: center;
+    font-size: 1vw;
+    text-align: center;
 }
-.h2i{
+.h2i
+{
     font-size: 4vw;
     border: 1px solid black;
     background-color: beige;
-  }
-a {
+}
+a 
+{
     text-decoration: none; /* Supprime le soulignement des liens */
     color: red;
 }
 
- .h2i:hover, .commande:hover {
+ .h2i:hover, .commande:hover 
+{
     background-color: red;   /* la couleur du fond au survol de la souris */
 }
-.bas{
+.bas
+{
 	background-color: rgb(144, 213, 255);
     display: flex;
     width: 100vw;
     flex-direction: column;
 }
-.plat1 img {
+.plat1 img 
+{
 	position: relative;
     width: 21vw;
     margin-left: 21vw;
     border-radius: 20px;
     top: 60px;
 }
-.plat1 p {
+.plat1 p 
+{
 	position: relative;
     color: black;
     margin-left: 25vw;
     top: 4vw;
     font-size: 1vw;
 }
-.bas h2 {
+.bas h2 
+{
 	font-size: 2vw;
     position: relative;
 }
-.plat2 img {
+.plat2 img 
+{
 	position: relative;
     width: 21vw;
     height: 21vw;
@@ -88,7 +103,8 @@ a {
     margin-left: 61vw;
     border-radius: 20px;
 }
-.plat2 p {
+.plat2 p 
+{
 	color: black;
     position: relative;
     top: -15vw;
@@ -96,138 +112,157 @@ a {
     font-size: 1vw;
 } 
 
-.hor h2 {
- font-size: -9vw;
+.hor h2 
+{
+    font-size: -9vw;
     position: relative;
     top: -11vw;
     margin-left: 40vw;
 }
 
-.hor p {
+.hor p 
+{
 	color: black;
     position: relative;
     top: -7vw;
     margin-left: 62vw;
     font-size: 2vw;
 }
-.maps h2 {
+.maps h2 
+{
 	font-size: 2vw;
     position: relative;
     margin-left: -43vw;
     top: -50vw;
 }
-.maps p {
+.maps p 
+{
 	color: black;
     margin-left: 20vw;
     top: -22vw;
     position: relative;
     font-size: 1vw;
 }
-.maps img {
+.maps img 
+{
 	width: 41vw;
     margin-left: 10vw;
     top: -49vw;
     position: relative;
     border-radius: 20px;
 }
-.com h2 {
+.com h2 
+{
     font-size: 3vw;
     position: relative;
     top: -7vw;
 }
-.com p {
+.com p 
+{
     color: black;
     position: relative;
     top: -35vw;
     margin-left: 33vw;
     font-size: 2vw;
 }
-.com a{
+.com a
+{
    position: relative;
    top: -450px;   
    margin-right: 200px;
 }
-
   /* Conteneur central */
-.wrap {
+.wrap 
+{
     margin-left: 25vw;
     padding: 1vw;
 }
 /* Gros titre chic*/ 
-.title {
+.title 
+{
     font-size: 2vw;
     color: black;
     margin-left: 16vw;
 }
 /*pour les catégories */
-.repas {
+.repas 
+{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1vw;
     width: 45vw;
 }
  /* carte d'une catégorie */
-.card{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      padding: 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Ombre douce */
-     background-color: rgb(144, 213, 255);
+.card
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Ombre douce */
+    background-color: rgb(144, 213, 255);
 }
-.card:hover{
-      transform: translateY(-6px) scale(1.01);  /* Légère montée + zoom */
-    }
+.card:hover
+{
+    transform: translateY(-6px) scale(1.01);  /* Légère montée + zoom */
+}
 /* Conteneur image (arrondie) */
-.thumb{ 
-      aspect-ratio: 4 / 3; /* ratio agréable pour la photo */
-      overflow: hidden;    /* Masque débordement des images */
-      display: flex;
-      align-items: center;
+.thumb
+{ 
+    aspect-ratio: 4 / 3; /* ratio agréable pour la photo */
+    overflow: hidden;    /* Masque débordement des images */
+    display: flex;
+    align-items: center;
 }
-.thumb img{
-      width: 100%;
-      transition: transform .4s ease;  /* Animation hover image */
+.thumb img
+{
+    width: 100%;
+    transition: transform .4s ease;  /* Animation hover image */
 }
-.card:hover img{
-      transform: scale(1.03); /* zoom*/
+.card:hover img
+{
+    transform: scale(1.03); /* zoom*/
 }
 /* Titre de la catégorie*/
-.label {
+.label 
+{
     font-size: 2vw;
     border: 3px solid black;
     border-radius: 10px;
     background-color: rgb(6, 6, 155);
 }
 /* Texte sous-titre si besoin (muted) */
-.subtitle {
+.subtitle 
+{
     font-size: 2vw;
     color: black;
 }
  /* Pour la mise en page spécifique : Boissons grande colonne */
- .boisson-card img{
-  width: 20vw;
+.boisson-card img
+{
+    width: 20vw;
 
- }
-.boisson-card{
-      grid-column: 1 / -1; /* prend toute la ligne */   ;
+}
+.boisson-card
+{
+    grid-column: 1 / -1; /* prend toute la ligne */   ;
 }
  /* Boisson : image plus verticale */
-.boisson-card .thumb{
-      width: 48%;
-	  aspect-ratio: 4/4;
+.boisson-card .thumb
+{
+    width: 48%;
+	aspect-ratio: 4/4;
 }
-
-
-
-.label1 {
+.label1 
+{
     font-family: 'Great Vibes', cursive;
     font-size: 2vw;
     color: white;
     top: -19vw;
     position: relative;
 }
-.p1 {
+.p1 
+{
     position: relative;
     font-size: 2vw;
     color: black;
@@ -237,18 +272,21 @@ a {
     margin-left: 18vw;
 }
 
-.thumb1{
-  margin-right: 1480px;
+.thumb1
+{
+    margin-right: 1480px;
     position: relative;
     top: -10px;
 } 
-.thumb1 img {
+.thumb1 img
+{
     width: 20vw;
     border-radius: 20px;
     margin-left: 17vw;
 }
 
-.card1{ display: flex;
+.card1
+{   display: flex;
     flex-direction: column;
     align-items: center;
     padding: 22px;
@@ -260,19 +298,22 @@ a {
     margin-left: -1px;
      
 }
-footer {
-  display: flex;
-  flex-direction: column;
+footer 
+{
+    display: flex;
+    flex-direction: column;
 }
-.droite{
-  font-size: 30px; 
-  font-weight: 10;
-  display:flex ;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column ;
+.droite
+{
+    font-size: 30px; 
+    font-weight: 10;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
 }
-.style {
+.style 
+{
     display: flex;
     border: 2px solid black;
     background-color: white;
@@ -281,7 +322,8 @@ footer {
     top: -34vw;
     position: relative;
 }
-.droite {
+.droite 
+{
     font-size: 2vw;
     font-weight: 10;
     display: flex;
@@ -289,22 +331,27 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-input {
+input 
+{
     font-size: 1vw;
 }
-textarea#msg {
+textarea#msg 
+{
     font-size: 1vw;
 }
-.repas1{
-  flex-direction: column;
+.repas1
+{
+    flex-direction: column;
 }
-#selection-contact {
+#selection-contact 
+{
     top: -34vw;
     position: relative;
     font-size: 3vw;
-  }
- footer hr {
-  border-top: 2px solid black;
+}
+ footer hr 
+ {
+    border-top: 2px solid black;
     width: 100%;
     position: relative;
     top: -35vw;
