@@ -20,7 +20,7 @@ html
 {
 	width: 100%;
     height: 100vh; /* plein écran */
-	background-image:url(../../images/Fond-resto.jpg); /* Image de fond pour la section supérieure */
+	background-image:url(../../images/Fond-resto.webp); /* Image de fond pour la section supérieure */
 	background-size: cover; /* L’image est entièrement visible, sans être coupée, mais peut laisser des bords vides */
 	background-position: center; 
 	display:flex; /* Active Flexbox pour centrer les éléments à l’intérieur */

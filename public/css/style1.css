@@ -190,11 +190,9 @@
 }
 header {
 	display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
-    border-bottom: 3px solid #808080;
-    background-color: gray;
-    position: relative;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: gray;
 }
 /* switch pour changer le mode sombre / clair */
 #switch {
