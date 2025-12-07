@@ -204,9 +204,10 @@
   {
     height: 20vw;
   }
-  header nav img 
+  nav img 
   {
-    width: 18vw;     /* taille responsive */
-    height: auto;
+    margin-left: -48vw;
+    width: 15vw;
+    height: 13vw;
   }
 }
