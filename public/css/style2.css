@@ -1,5 +1,5 @@
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
-@media screen and (max-width: 370px) 
+@media screen and (max-width: 400px) 
 {
   body, html 
   {
@@ -177,10 +177,10 @@
   {
     font-size: 22px;
   }
-  .thumb1 img
-  { 
+  .thumb1 img 
+  {
     width: 43vw;
-    margin-left: 343vw;
+    margin-left: 309vw;
   }
   .label1 
   {

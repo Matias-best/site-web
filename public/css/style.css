@@ -4,11 +4,9 @@ body
     background-color: rgb(137, 81, 41);
     overflow-x: hidden;
 }
-nav img 
-{
+nav img {
     display: flex;
     width: 4vw;
-    margin-right: 89vw;
     height: 3vw;
 }
 html 

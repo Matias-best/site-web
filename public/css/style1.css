@@ -189,25 +189,24 @@
 
 }
 header {
-	display: flex;
-  justify-content: flex-end;
+  display: flex;
   padding: 10px 20px;
   background-color: gray;
 }
 /* switch pour changer le mode sombre / clair */
 #switch {
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    height: 3vw;
-    /* width: 3vw; */
-    border: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    flex: 0 0 2vw;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  height: 3vw;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex: 0 0 2vw;
+  margin-left: 93%;
 }
 #switch img {
    position: absolute;
@@ -243,10 +242,9 @@ header {
 	display:block;
 }
 #but {
-    background: none;
-    border: none;
-    margin-left: 1%;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
  #but img {
     transition: transform 0.3s ease;
