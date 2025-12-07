@@ -8,7 +8,8 @@
     width: 100%;
     overflow-x : hidden;
   }
-  .haut {
+  .haut 
+  {
     width: 100vw;
     height: auto;
     background-size: cover;
@@ -129,6 +130,11 @@
     top: 0vw;
     margin-right: 100vw;
   }
+  summary 
+  {
+    top: -7vw;
+    position: relative;
+  }
   .menu 
   {
     position: relative;
@@ -139,10 +145,10 @@
   }
   .menu ul 
   {
-  position: relative;
-  font-size: 5vw;
-  margin-left: -10vw;
-  top: 0vw;
+    position: relative;
+    font-size: 5vw;
+    margin-left: -10vw;
+    top: -3vw;
   }
   #switch 
   {
@@ -190,19 +196,17 @@
   }
   .p1 
   {
-  font-size: 3vw;
-  margin-left: 38vw;
-  top: -22vw;
+    font-size: 3vw;
+    margin-left: 38vw;
+    top: -22vw;
   }
   .card1 
   {
-  height: 20vw;
+    height: 20vw;
   }
-  nav img 
+  header nav img 
   {
-    margin-left: -48vw;
-    width: 15vw;
-    position: absolute;
-    height: 13vw;
+    width: 18vw;     /* taille responsive */
+    height: auto;
   }
 }
