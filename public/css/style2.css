@@ -1,5 +1,5 @@
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
-@media screen and (max-width: 300px) 
+@media screen and (max-width: 350px) 
 {
   body, html 
   {
