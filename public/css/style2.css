@@ -133,16 +133,16 @@
   {
     position: relative;
     width: 36vw;
-    height: 21vw;
+    height: 45vw;
     margin-left: 53vw;
     top: 0;
   }
   .menu ul 
   {
-    position: relative;
-    font-size: 5vw;
-    margin-left: -10vw;
-    top: -5vw;
+  position: relative;
+  font-size: 5vw;
+  margin-left: -10vw;
+  top: 0vw;
   }
   #switch 
   {
