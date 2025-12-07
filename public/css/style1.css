@@ -1,7 +1,8 @@
+.darkmode .menu 
+{
+  background-color: rgb(255, 144, 144);
+}
 .darkmode {   
-  .menu {
-    background-color: rgb(255, 144, 144);
-  }
   .card, .card1 {
     background-color: rgb(255, 144, 144);
   }
@@ -162,16 +163,6 @@
     justify-content: center;
     align-items: center;
      width: 12vw;
-}
-.droiter
- {
-  font-size: 50px;
-  top: -335px;
-  position: relative;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
 }
 .thumb img {
   width: 100%;
