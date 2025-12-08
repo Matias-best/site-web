@@ -1,6 +1,11 @@
 .darkmode {   
+
+   background: radial-gradient(circle at 20% 20%, #aa2323, transparent),
+              radial-gradient(circle at 80% 80%, #6a00ff, transparent),
+              #000;
   .menu {
     background-color: rgb(255, 144, 144);
+    
   }
   .card, .card1 {
     background-color: rgb(255, 144, 144);
@@ -15,7 +20,7 @@
 		color: white;
 	}
   header {
-    background-color: beige;
+    background-color: rgb(0, 0, 0);
   }
   .plat1 img {
     position: relative;
@@ -179,14 +184,24 @@
   position: relative;
   border-radius: 20px
 }
-.card 
+.card
 {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: c;
   align-items: center;
   padding: 22px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  background-color: rgb(255, 144, 144);
+  background: red;
+  border-radius: 30%;
+}
+.card1
+{
+  display: flex;
+  flex-direction: c;
+  align-items: center;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  background: antiquewhite;
   border-radius: 30%;
 }
 .subtitle 
@@ -195,6 +210,51 @@
   color: rgb(255, 255, 255);
   padding: 2vw;
 }
+
+.thumb1 img 
+{ 
+  display:flex;
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+  width: 12vw;
+  position: relative;
+  border-radius: 20%;
+  margin-left: 25vw;
+  top: 0vw;
+}
+.title
+{
+  font-size: 2vw;
+  color: black;
+  margin-left: 41vw;
+  
+}
+.label1 
+{
+  font-family: 'Great Vibes', cursive;
+  font-size: 4vw;
+  color: red;
+  top: -14vw;
+  position: relative;
+  margin-left: -76vw;
+}
+.p1
+{
+  font-size: 2vw;
+  color: red;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  top: -7vw;
+  margin-left: 50vw;
+  
+}
+
+
+ 
+
+
+
 
 }
 header {
