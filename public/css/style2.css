@@ -1,7 +1,6 @@
 /* Ajuste automatiquement la taille du site selon la largeur de l'écran */
 @media screen and (max-width: 400px) 
 {
-
   body, html 
   {
     margin: 0;
@@ -9,9 +8,8 @@
     width: 100%;
     overflow-x : hidden;
   }
-
-
-  .haut {
+  .haut 
+  {
     width: 100vw;
     height: auto;
     background-size: cover;
@@ -19,19 +17,16 @@
     align-items: center;
     text-align: center;
   }
-
   .haut h1 
   {
     font-size: 11vw;
   }
-
   .haut p 
   {
     font-size: 6vw;
     margin-left: -7vw;
     top: -28px;
   }
-  
   .h2i 
   {
     font-size: 8vw;
@@ -39,7 +34,6 @@
     top: -9vw;
     position: relative;
   }
-
   .bas 
   {
     width: 100vw;
@@ -47,8 +41,6 @@
     align-items: center;
     text-align: center;
   }
-
- 
   .plat1 img, .plat2 img, .maps img 
   {
     width: 80%;
@@ -57,21 +49,18 @@
     display: block;
     top: 0;
   }
-
   .plat1 p, .plat2 p, .maps p 
   {
     font-size: 20px;
     margin-left: 0;
     top: 0;
   }
-
   .bas h2 
   {
     font-size: 10vw;
     margin-left: 0;
     top: 0;
   }
-
   .hor p 
   {
     font-size: 18px;
@@ -79,19 +68,15 @@
     top: 0;
     text-align: center;
   }
-
   .maps 
   {
     text-align: center;
   }
-
   .maps img 
   {
     width: 90%;
     margin: 0 auto;
   }
-
- 
   .com p 
   {
     font-size: 22px;
@@ -99,7 +84,6 @@
     top: 0;
     text-align: center;
   }
-
   .com a 
   {
     top: 0;
@@ -114,7 +98,6 @@
     position: relative;
     top: -5vw;
   }
-
   .style 
   {
     font-size: 10vw;
@@ -147,11 +130,16 @@
     top: 0vw;
     margin-right: 100vw;
   }
+  summary 
+  {
+    top: -7vw;
+    position: relative;
+  }
   .menu 
   {
     position: relative;
     width: 36vw;
-    height: 21vw;
+    height: 45vw;
     margin-left: 53vw;
     top: 0;
   }
@@ -160,12 +148,12 @@
     position: relative;
     font-size: 5vw;
     margin-left: -10vw;
-    top: -5vw;
+    top: -3vw;
   }
   #switch 
   {
     position: relative;
-    margin-right: 26vw;
+    margin-left: -2vw;
     height: 7vw;
     flex: 0 0 9vw;
     top: 2vw;
@@ -187,42 +175,43 @@
     gap: 40px;
     justify-items: center;
   }
-
   .card 
   {
     width: 90%;
   }
-
   .label, .subtitle 
   {
     font-size: 22px;
   }
-  .thumb1 img
-  { 
+  .thumb1 img 
+  {
     width: 43vw;
-    margin-left: 343vw;
+    margin-left: 316vw;
   }
   .label1 
   {
     font-size: 6vw;
-    top: -42vw;
+    top: -51vw;
     margin-left: 16vw;
   }
   .p1 
   {
-  font-size: 3vw;
-  margin-left: 38vw;
-  top: -22vw;
+    font-size: 4vw;
+    margin-left: 38vw;
+    top: -22vw;
   }
   .card1 
   {
-  height: 20vw;
+    height: 20vw;
   }
   nav img 
   {
-    margin-left: -48vw;
+    margin-left: -5vw;
     width: 15vw;
-    position: absolute;
     height: 13vw;
+  }
+  header 
+  {
+    justify-content: space-between;
   }
 }

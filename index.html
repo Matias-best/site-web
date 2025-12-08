@@ -1,45 +1,63 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<link rel="stylesheet" href= "public/css/style.css">
-		<link rel="stylesheet" href= "public/css/style1.css">
-		<link rel="stylesheet" href= "public/css/style2.css">
+		<meta charset="utf-8">
+		<link rel="stylesheet"  type="text/css" href= "public/css/style.css">
+		<link rel="stylesheet"  type="text/css" href= "public/css/style1.css">
+		<link rel="stylesheet"  type="text/css" href= "public/css/style2.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Bienvenue sur le site de notre restaurant. Découvrez nos plats faits maison et commandez en ligne.">
-		<link rel="icon" href="favicon.ico">
-		<link rel="icon" type="image/png" href="logo.png">
-		<meta charset="utf-8">
+		<link rel="icon" href="images/favicon.webp">
+		<meta property="og:title" content="Restaurant">
+		<meta property="og:description" content="Découvrez nos plats faits maison et commandez en ligne.">
+		<meta property="og:image" content="https://ma-credence-deco.com/18813-pdt_540/credence-bain-de-legumes-fond-blanc.jpg">
+		<meta property="og:url" content="https://restaurant-cuisine.alwaysdata.net/">
+		<meta property="og:type" content="website">
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Département Informatique - IUT d'Aix-en-Provence",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenue Gaston Berger",
+    "addressLocality": "Aix-en-Provence",
+    "postalCode": "13625",
+    "addressCountry": "FR"
+  },
+  "url": "https://restaurant-cuisine.alwaysdata.net/",
+  "telephone": "+33 4 42 93 90 00",
+  "servesCuisine": "Française",
+  "image": "https://restaurant-cuisine.alwaysdata.net/"
+}
+</script>
 		<title>cuisine</title>
 	</head>
 	<body>
 	 <!-- Partie supérieure de la page -->
 		<header>
-	 		<button id="switch">
-	 			<img src="images/lunes.jpg" width="40" height="40" alt="lune">
-	 			<img src="images/soleil.png"  width="40" height="40" alt="soleil">
+	 		<button id="switch" aria-label="Activer ou désactiver le mode sombre">
+	 			<img src="images/lunes.webp" width="40" height="40" alt="lune">
+	 			<img src="images/soleil.webp"  width="40" height="40" alt="soleil">
 	 		</button>
-	 		<button id="but">
-                <img src="images/points.jpg" alt=" points">
+	 		<button id="but" aria-label="Ouvrir le menu de navigation">
+                <img src="images/points.webp" alt=" points">
 			</button>
 		</header>
 			<section class="menu"> 
 				<h2> Navigation </h2>
 					<div>
 						<nav> 
-							<ul>
-								<li>
-									<details>
-										<summary><strong> <a href="public/html/Carte.html">Carte</a></strong></summary>
-											<ul>
-												<li><a href="public/html/entree.html">Entrées</a></li>
-												<li><a href="public/html/plats.html">Plats principaux</a></li>
-												<li><a href="public/html/desserts.html">Desserts</a></li>
-												<li><a href="public/html/accompagnements.html">Accompagnements</a></li>
-												<li><a href="public/html/boissons.html">Boissons</a></li>
-											</ul>
-									</details>
-								</li>
-							</ul>
+							<details>
+								<summary><strong> <a href="public/html/Carte.html">Carte</a></strong></summary>
+									<ul>
+										<li><a href="public/html/entree.html">Entrées</a></li>
+										<li><a href="public/html/plats.html">Plats principaux</a></li>
+										<li><a href="public/html/desserts.html">Desserts</a></li>
+										<li><a href="public/html/accompagnements.html">Accompagnements</a></li>
+										<li><a href="public/html/boissons.html">Boissons</a></li>
+									</ul>
+							</details>
 						</nav>
 					</div>
 			</section>
@@ -58,11 +76,11 @@
 		<div class="bas">
 			<h2> Nos spécialités </h2>
 				<div class="plat1">	
-					<img src="images/risotto.jpg" alt="Risotto">
+					<img src="images/risotto.webp" alt="Risotto">
 					<p>Risotto aux champignons</p>
 				</div>
 			<div class ="plat2">
-				<img src="images/Magret.jpg" alt="Magret">
+				<img src="images/Magret.webp" alt="Magret">
 				<p> Magret de canard au miel</p>
 			</div>
 			<div class="hor">
@@ -79,7 +97,7 @@
 			<div class="maps">
 				<h2>Nous trouver</h2>
 				<p>23 Bd de Sébastopol, 75001 Paris</p>
-				<img src="images/Maps.jpg" alt="Maps">
+				<img src="images/Maps.webp" alt="Maps">
 			</div>	
 		
 			<div class="com"> 
@@ -89,20 +107,18 @@
 				</nav>
 			</div>
 			<a href="#haut" class="btn-anchor">
-				<button>
-					<img src="images/fleche.jpg" width="40" height="40" alt="fleche">
-				</button>
+				<img src="images/fleche.webp" width="40" height="40" alt="fleche">
 			</a>
 			<footer> <!-- le pied de page -->
 				<hr>
 		  		<h3 class="droite" id="selection-contact">Nous contacter</h3>		
-					<form class ="style"id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+					<form class ="style" id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
 						<p>
 							<label  class="droite">Prénom</label><input id="prenom" type="text" name="prenom" value=" ">
 							<label class="droite">Nom</label><input id="nom" type="text" name="nom" value=" ">
 				
 							<label  class="droite">E-mail&nbsp;:</label>
-							<input type="email" id="mail" name="user_mail" />
+							<input type="email" id="mail" name="user_mail">
 			
 							<label class="droite" >Laissez un message&nbsp;:</label>
 							<textarea id="msg" name="user_message"></textarea>
@@ -111,7 +127,6 @@
 					</form>
 			</footer>
 		</div>
-		<script src="local-seo.js"></script>
 		<script src= "public/js/JavaScript.js"></script>
 	</body>
 </html>
