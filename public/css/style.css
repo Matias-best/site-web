@@ -153,13 +153,13 @@ a
 {
     font-size: 3vw;
     position: relative;
-    top: -7vw;
+    top: 1vw;
 }
 .com p 
 {
     color: black;
     position: relative;
-    top: -35vw;
+    top: -28vw;
     margin-left: 33vw;
     font-size: 2vw;
 }
@@ -317,7 +317,7 @@ footer
     background-color: white;
     margin: auto;
     width: 14vw;
-    top: -34vw;
+    top: -45vw;
     position: relative;
 }
 .droite 
@@ -343,14 +343,13 @@ textarea#msg
 }
 #selection-contact 
 {
-    top: -34vw;
+    top: -45vw;
     position: relative;
     font-size: 3vw;
 }
- footer hr 
- {
-    border-top: 2px solid black;
+footer hr  
+{
     width: 100%;
     position: relative;
-    top: -35vw;
+    top: -64vw;
 }
