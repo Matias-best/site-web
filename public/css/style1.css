@@ -191,13 +191,7 @@
   font-size: 3vw;
 }
 
-footer hr 
-{
- /*display: none;*/
-  width: 100%;
-  position: relative;
-  top: -90vw;
-}
+
 .darkmode.droite 
 {
   font-size: 2vw;
