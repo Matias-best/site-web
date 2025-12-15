@@ -310,14 +310,13 @@ footer
     align-items: center;
     flex-direction: column ;
 }
-.style 
-{
+.style {
     display: flex;
     border: 2px solid black;
     background-color: white;
     margin: auto;
     width: 14vw;
-    top: -45vw;
+    top: -59vw;
     position: relative;
 }
 .droite 
@@ -341,15 +340,20 @@ textarea#msg
 {
     flex-direction: column;
 }
-#selection-contact 
-{
-    top: -45vw;
+#selection-contact {
+    top: -60vw;
     position: relative;
     font-size: 3vw;
 }
-footer hr  
-{
+footer hr {
     width: 100%;
     position: relative;
-    top: -64vw;
+    top: -79vw;
+}
+video {
+   
+    width: 52vw;
+    margin-left: 24vw;
+    top: 25vw;
+    position: relative;
 }

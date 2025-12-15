@@ -20,9 +20,6 @@
 {
 	background-color: rgb(255, 144, 144);
 }
-.darkmode .maps p,.darkmode .hor p, .darkmode .plat2 p, .darkmode .plat1 p,.darkmode .bas h2, .darkmode.com p, .darkmode.title,.darkmode .label, .darkmode.subtitle {
-	color: white;
-}
 .darkmode header
 {
   background-color: rgb(0, 0, 0);
@@ -100,98 +97,60 @@
   background-color: rebeccapurple;
   width: auto;
 }
-.darkmode .maps img 
-{
-  width: 500px;
-  margin-left: 162px;
-  top: -490px;
-  position: relative;
-  border-radius: 20px;
-}
 .darkmode .thumb
 {
   position: relative;
   border-radius: 50%;
 }
-.darkmode .maps p 
-{
-  color: black;
-  margin-left: 742px;
-  top: -296px;
-  position: relative;
-  font-size: 37px;
+
+.darkmode .com p {
+    color: black;
+    position: relative;
+    top: -32vw;
+    margin-left: 4vw;
+    font-size: 3vw;
 }
-.darkmode .maps h2 
-{
-  position: relative;
-  font-size: 5vw;
-  margin-left: 18vw;
-  top: -60vw;
+.darkmode .com h2 {
+    color: black;
+    font-size: 3vw;
+    margin: auto;
+    left: 5%;
+    top: -9vw;
+    position: relative;
+    border: 2px solid black;
+    background-color: white;
+    width: 10vw;
 }
-.darkmode .com p 
-{
-  color: black;
-  position: relative;
-  top: -9vw;
-  margin-left: 4vw;
-  font-size: 3vw;
+.darkmode .maps img {
+    width: 48vw;
+    margin-left: 3vw;
+    top: -58vw;
+    position: relative;
+    border-radius: 40%;
 }
-.darkmode .com h2 
-{
-  color: black;
-  font-size: 3vw;
-  margin: auto;
-  left: 15%;
-  top: 47vw;
-  position: relative;
-  border: 2px solid black;
-  background-color: white;
-  width: 10vw;
-}
-.darkmode .maps img
-{
-  width: 35vw;
-  margin-left: 16vw;
-  top: -70vw;
-  position: relative;
-  border-radius: 40%;
-}
-.darkmode .maps p 
-{
-  color: black;
-  margin-left: 55vw;
-  top: -53vw;
-  position: relative;
-  font-size: 3vw;
+.darkmode .maps p {
+    color: black;
+    margin-left: 55vw;
+    top: -41vw;
+    position: relative;
+    font-size: 3vw;
 }
 
-.darkmode .style 
-{
-  display: flex;
-  border: 2px solid black;
-  background-color: white;
-  margin: auto;
-  width: 14vw;
-  top: -34vw;
-  position: relative;
+.darkmode .style {
+    display: flex;
+    border: 2px solid black;
+    background-color: white;
+    margin: auto;
+    width: 14vw;
+    top: -57vw;
+    position: relative;
 }
-.darkmode .maps h2 
-{
-  position: relative;
-  font-size: 5vw;
-  margin-left: auto;
-  top: -58vw;
+.darkmode .maps h2 {
+    position: relative;
+    font-size: 5vw;
+    margin-left: auto;
+    top: -55vw;
 }
-.darkmode.com p 
-{
-  color: black;
-  position: relative;
-  top: -65vw;
-  margin-left: 5;
-  font-size: 3vw;
-}
-
-
 .darkmode.droite 
 {
   font-size: 2vw;
@@ -270,6 +229,7 @@
   top: -9vw;
   margin-left: 50vw;
 }
+<<<<<<< HEAD
 .darkmode .thumb1 img 
 { 
   position: absolute;
@@ -277,6 +237,15 @@
   object-fit: cover;
  
 }
+=======
+.darkmode #selection-contact
+{
+  top: -55vw;
+  position: relative;
+  font-size: 5vw;
+}
+
+>>>>>>> d4a1d6d18d14889f2060108f03d8e138d42ab70d
 header 
 {
   display: flex;
