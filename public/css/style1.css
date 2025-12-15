@@ -228,24 +228,20 @@ footer hr
   position: relative;
   border-radius: 20%
 }
-.darkmode .card
-{
-  display: flex;
-  flex-direction: c;
-  align-items: center;
-  padding: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  background: red;
-  border-radius: 30%;
-}
 .darkmode .card1
 {
   display: flex;
   align-items: center;
   padding: 22px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  background: red;
+  border-radius: 30%;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
   background: antiquewhite;
   border-radius: 30%;
+
+ 
 }
 .darkmode .subtitle 
 {
@@ -254,13 +250,6 @@ footer hr
   padding: 2vw;
 }
 
-.darkmode .thumb1 img 
-{ 
-  position: relative;
-  display: flex;
-  justify-content: center;   
-  max-width: 100%;
-}
 .darkmode .title
 {
   font-size: 2vw;
@@ -275,7 +264,7 @@ footer hr
   color: red;
   margin-right: auto;
   text-align: left;
-  margin-top: 2vw;
+  margin-top: -12vw;
   padding: 2vw;
 }
 .darkmode .p1
@@ -287,7 +276,13 @@ footer hr
   top: -9vw;
   margin-left: 50vw;
 }
-
+.darkmode .thumb1 img 
+{ 
+  position: absolute;
+  max-width: 100%;
+  object-fit: cover;
+ 
+}
 header 
 {
   display: flex;
