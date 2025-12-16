@@ -15,7 +15,6 @@
   background: red;
   border-radius: 30%;
   padding: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
   border-radius: 30%;
 }
 .darkmode .card1 
@@ -42,7 +41,6 @@
 }
 .darkmode .plat1 img 
 {
-  display: flex;
   position: relative;
   border-radius : 50%;
   width: 20vw;
