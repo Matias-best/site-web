@@ -5,12 +5,22 @@
               #000;
 }
 
-.darkmode .card
+.darkmode .card 
 {
   background-color: rgb(255, 144, 144);
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  background: red;
+  border-radius: 30%;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border-radius: 30%;
 }
 .darkmode .card1 {
   background-color: rgb(255, 144, 144);
+  padding: 3vw;
 }
 .darkmode .label 
 {
@@ -20,9 +30,8 @@
 {
 	background-color: rgb(255, 144, 144);
 }
-.darkmode header
-{
-  background-color: rgb(0, 0, 0);
+.darkmode header {
+  background-color: rgb(151, 0, 255);
 }
 .darkmode .h2i 
 {
@@ -111,15 +120,15 @@
     font-size: 3vw;
 }
 .darkmode .com h2 {
-    color: black;
-    font-size: 3vw;
-    margin: auto;
-    left: 5%;
-    top: -9vw;
-    position: relative;
-    border: 2px solid black;
-    background-color: white;
-    width: 10vw;
+  color: black;
+  font-size: 3vw;
+  margin: auto;
+  margin-left: 56vw;
+  top: -15vw;
+  position: relative;
+  border: 2px solid black;
+  background-color: white;
+  width: 10vw;
 }
 .darkmode .maps img {
     width: 48vw;
@@ -137,13 +146,13 @@
 }
 
 .darkmode .style {
-    display: flex;
-    border: 2px solid black;
-    background-color: white;
-    margin: auto;
-    width: 14vw;
-    top: -57vw;
-    position: relative;
+  display: flex;
+  border: 2px solid black;
+  background-color: white;
+  margin: auto;
+  width: 14vw;
+  top: -76vw;
+  position: relative;
 }
 .darkmode .maps h2 {
     position: relative;
@@ -181,21 +190,6 @@
   position: relative;
   border-radius: 20%
 }
-.darkmode .card1
-{
-  display: flex;
-  align-items: center;
-  padding: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  background: red;
-  border-radius: 30%;
-  padding: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  background: antiquewhite;
-  border-radius: 30%;
-
- 
-}
 .darkmode .subtitle 
 {
   font-size: 2vw;
@@ -210,42 +204,32 @@
   margin-left: 41vw;
   
 }
-.darkmode .label1 
-{
+.darkmode .label1 {
   font-family: 'Great Vibes', cursive;
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: red;
-  margin-right: auto;
-  text-align: left;
-  margin-top: -12vw;
+  margin-left: -74vw;
   padding: 2vw;
+  top: -12vw;
 }
-.darkmode .p1
-{
+.darkmode .p1 {
   font-size: 2vw;
-  color: red;
-  text-align: center;
-  font-family: 'Great Vibes', cursive;
-  top: -9vw;
-  margin-left: 50vw;
-}
-<<<<<<< HEAD
-.darkmode .thumb1 img 
-{ 
-  position: absolute;
-  max-width: 100%;
-  object-fit: cover;
- 
-}
-=======
-.darkmode #selection-contact
-{
-  top: -55vw;
-  position: relative;
-  font-size: 5vw;
+
 }
 
->>>>>>> d4a1d6d18d14889f2060108f03d8e138d42ab70d
+.darkmode .thumb1 img {
+  position: relative;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.darkmode .thumb1 img {
+  position: relative;
+  border-radius: 50%;
+  top: -2vw;
+}
+
+
 header 
 {
   display: flex;
@@ -266,16 +250,13 @@ header
   overflow: hidden;
   display: flex;
   flex: 0 0 2vw;
-  margin-left: 93%;
+  margin-left: 88vw;
 }
-#switch img 
-{
-   position: absolute;
-    width: 80%;
-    height: 79%;
+#switch img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-
-
 #switch img:last-child
 {
    	display:none;    
@@ -318,9 +299,13 @@ header
     transition: transform 0.3s ease;
     height: 2vw;
   }
-.menu ul 
-{
+.menu ul {
   position: relative;
   font-size: 1vw;
   margin-left: -2vw;
+  top: -2vw;
+}
+summary {
+  top: -1vw;
+  position: relative;
 }
