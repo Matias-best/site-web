@@ -363,3 +363,7 @@ video
     top: 25vw;
     position: relative;
 }
+.btn-anchor 
+{
+    align-self: flex-start; /* que le boutton */
+}

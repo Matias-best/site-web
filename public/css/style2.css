@@ -216,7 +216,7 @@
   {
     width: 71vw;
     margin-left: -2vw;
-    top: 145vw;
+    top: 159vw;
     position: relative;
   }
   .darkmode .h2i
@@ -226,7 +226,7 @@
   .darkmode .plat1 p 
   {
     font-size: 6vw;
-    top: 42vw;
+    top: -40vw;
     margin-left: 57vw;
   }
   .darkmode .plat1 img 
@@ -297,5 +297,9 @@
   .darkmode .title 
   {
     font-size: 3vw;
+  }
+  .btn-anchor 
+  {
+    margin-left: 1vw;
   }
 }
