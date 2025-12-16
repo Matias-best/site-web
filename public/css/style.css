@@ -4,7 +4,8 @@ body
     background-color: rgb(137, 81, 41);
     overflow-x: hidden;
 }
-nav img {
+nav img 
+{
     display: flex;
     width: 4vw;
     height: 3vw;
@@ -49,7 +50,8 @@ h2 {
   top: -1vw;
   position: relative;
 }
-.h2i {
+.h2i 
+{
   font-size: 4vw;
   border: 1px solid black;
   background-color: beige;
@@ -111,7 +113,6 @@ a
     margin-left: 65vw;
     font-size: 1vw;
 } 
-
 .hor h2 
 {
     font-size: 3vw;
@@ -119,7 +120,6 @@ a
     top: -11vw;
     margin-left: 40vw;
 }
-
 .hor p 
 {
 	color: black;
@@ -171,7 +171,7 @@ a
    top: -450px;   
    margin-right: 200px;
 }
-  /* Conteneur central */
+/* Conteneur central */
 .wrap 
 {
     margin-left: 25vw;
@@ -278,24 +278,26 @@ a
     position: relative;
     top: -10px;
 } 
-.thumb1 img {
+.thumb1 img 
+{
   width: 20vw;
   border-radius: 20px;
   margin-left: 1vw;
 }
 
-.card1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 22px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  height: 10vw;
-  background-color: rgb(144, 213, 255);
-  width: 98vw;
-  margin: 20px;
+.card1 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    height: 10vw;
+    background-color: rgb(144, 213, 255);
+    width: 98vw;
+    margin: 20px;
     margin-left: 20px;
-  margin-left: -1px;
+    margin-left: -1px;
 }
 footer 
 {
@@ -311,7 +313,8 @@ footer
     align-items: center;
     flex-direction: column ;
 }
-.style {
+.style 
+{
     display: flex;
     border: 2px solid black;
     background-color: white;
@@ -341,18 +344,20 @@ textarea#msg
 {
     flex-direction: column;
 }
-#selection-contact {
+#selection-contact 
+{
     top: -60vw;
     position: relative;
     font-size: 3vw;
 }
-footer hr {
+footer hr 
+{
     width: 100%;
     position: relative;
     top: -79vw;
 }
-video {
-   
+video 
+{
     width: 52vw;
     margin-left: 24vw;
     top: 25vw;
