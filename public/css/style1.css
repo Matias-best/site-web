@@ -5,9 +5,10 @@
               #000;
 }
 
-.darkmode .card
+.darkmode .card 
 {
   background-color: rgb(255, 144, 144);
+<<<<<<< HEAD
   border-radius:30% ;
 }
 .darkmode .card1 
@@ -17,6 +18,19 @@
   background-color: rgb(255, 144, 144);
   margin: auto;
   margin-top: 2vw;
+  align-items: center;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  background: red;
+  border-radius: 30%;
+  padding: 22px;
+
+}
+.darkmode .card1 
+{
+  background-color: rgb(255, 144, 144);
+  padding: 3vw;
+
 }
 .darkmode .label 
 {
@@ -26,9 +40,9 @@
 {
 	background-color: rgb(255, 144, 144);
 }
-.darkmode header
+.darkmode header 
 {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(151, 0, 255);
 }
 .darkmode .h2i 
 {
@@ -37,15 +51,14 @@
 }
 .darkmode .plat1 img 
 {
-  display: flex;
   position: relative;
   border-radius : 50%;
   width: 20vw;
   right:20%;
   top: 7vw;
-
 }
-.darkmode .plat1 p {
+.darkmode .plat1 p 
+{
   position: relative;
   margin-right: auto;
   text-align: left;
@@ -109,54 +122,53 @@
   border-radius: 50%;
 }
 
-.darkmode .com p {
-    color: black;
-    position: relative;
-    top: -32vw;
-    margin-left: 4vw;
-    font-size: 3vw;
+.darkmode .com p 
+{
+  color: black;
+  position: relative;
+  top: -32vw;
+  margin-left: 4vw;
+  font-size: 3vw;
 }
-.darkmode .com h2 {
-    color: black;
-    font-size: 3vw;
-    margin: auto;
-    left: 5%;
-    top: -9vw;
-    position: relative;
-    border: 2px solid black;
-    background-color: white;
-    width: 10vw;
+.darkmode .com h2 
+{
+  margin-left: 50vw;
+  border: 2px solid black;
+  background-color: white;
+  width: 10vw;
+  top: -9vw
 }
-.darkmode .maps img {
-    width: 48vw;
-    margin-left: 3vw;
-    top: -58vw;
-    position: relative;
-    border-radius: 40%;
+.darkmode .maps img 
+{
+  width: 48vw;
+  margin-left: 3vw;
+  top: -58vw;
+  position: relative;
+  border-radius: 40%;
 }
+<<<<<<< HEAD
 .darkmode .maps p
+=======
+.darkmode .maps p 
+>>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 {
   color: black;
   margin-left: 55vw;
   top: -41vw;
   position: relative;
+<<<<<<< HEAD
   font-size: 3vw;    
+=======
+  font-size: 3vw;
+>>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 }
 
-.darkmode .style {
-    display: flex;
-    border: 2px solid black;
-    background-color: white;
-    margin: auto;
-    width: 14vw;
-    top: -57vw;
-    position: relative;
-}
-.darkmode .maps h2 {
-    position: relative;
-    font-size: 5vw;
-    margin-left: auto;
-    top: -55vw;
+.darkmode .maps h2 
+{
+  position: relative;
+  font-size: 5vw;
+  margin-left: auto;
+  top: -55vw;
 }
 .darkmode.droite 
 {
@@ -197,6 +209,7 @@
   
 
 }
+<<<<<<< HEAD
 .darkmode .card1
 {
   border-radius: 30%;
@@ -207,6 +220,8 @@
 
  
 }
+=======
+>>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 .darkmode .subtitle 
 {
   font-size: 2vw;
@@ -223,16 +238,22 @@
 }
 .darkmode .label1 
 {
+<<<<<<< HEAD
   font-family: 'Great Vibes', cursive;
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: red;
   margin-right: auto;
   text-align: left;
+=======
+  margin-left: -74vw;
+>>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
   padding: 2vw;
+  top: -10vw;
 }
-.darkmode .p1
+.darkmode .p1 
 {
   font-size: 2vw;
+<<<<<<< HEAD
   color: red;
   text-align: center;
   font-family: 'Great Vibes', cursive;
@@ -247,6 +268,19 @@
   font-size: 5vw;
 }
 
+=======
+}
+
+.darkmode .thumb1 img 
+{
+  border-radius: 50%;
+  margin-left: 10vw;
+  top: -1vw;
+  position: relative;
+}
+
+
+>>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 header 
 {
   display: flex;
@@ -267,16 +301,14 @@ header
   overflow: hidden;
   display: flex;
   flex: 0 0 2vw;
-  margin-left: 93%;
+  margin-left: 88vw;
 }
 #switch img 
 {
-   position: absolute;
-    width: 80%;
-    height: 79%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-
-
 #switch img:last-child
 {
    	display:none;    
@@ -314,14 +346,20 @@ header
   border: none;
   cursor: pointer;
 }
- #but img 
- {
-    transition: transform 0.3s ease;
-    height: 2vw;
-  }
+#but img 
+{
+  transition: transform 0.3s ease;
+  height: 2vw;
+}
 .menu ul 
 {
   position: relative;
   font-size: 1vw;
   margin-left: -2vw;
+  top: -2vw;
+}
+summary 
+{
+  top: -1vw;
+  position: relative;
 }

@@ -58,8 +58,8 @@
   .bas h2 
   {
     font-size: 10vw;
-    margin-left: 0;
-    top: 0;
+    top: -33px;
+    margin-left: 1vw;
   }
   .hor p 
   {
@@ -100,11 +100,10 @@
   }
   .style 
   {
-    font-size: 10vw;
-    top: 0;
     display: block;
     width: 45vw;
   }
+
   .droite 
   {
     font-size: 7vw;
@@ -122,12 +121,11 @@
   #selection-contact 
   {
     font-size: 9vw;
-    top: 1vw;
+    top: -59vw;
   }
   footer hr 
   {
-    margin: 20px auto;
-    top: 0vw;
+    top: -51vw;
     margin-right: 100vw;
   }
   summary 
@@ -213,5 +211,95 @@
   header 
   {
     justify-content: space-between;
+  }
+  video 
+  {
+    width: 71vw;
+    margin-left: -2vw;
+    top: 159vw;
+    position: relative;
+  }
+  .darkmode .h2i
+  {
+    font-size: 8vw;
+  }
+  .darkmode .plat1 p 
+  {
+    font-size: 6vw;
+    top: -40vw;
+    margin-left: 57vw;
+  }
+  .darkmode .plat1 img 
+  {
+    width: 47%;
+    top: -54px;
+    margin-left: 20vw;
+  }
+  .darkmode .plat2 img 
+  {
+    width: 46%;
+    top: -144px;
+    margin-left: 60vw;
+  }
+  .darkmode .plat2 p 
+  {
+    font-size: 6vw;
+    top: -76vw;
+    left: 53vw;
+  }
+  .darkmode .hor h2
+  {
+    font-size: 10vw;
+    top: -65vw;
+    margin-left: 1vw;
+  }
+  .darkmode .label1
+  {
+    font-size: 6vw;
+    top: -30vw;
+  }
+  .darkmode .thumb1 img
+  {
+    width: 14%;
+    margin-left: 270vw;
+  }
+  .darkmode .p1 
+  {
+    font-size: 4vw;
+    margin-left: 38vw;
+    top: -22vw;
+  }
+  .darkmode .maps img 
+  {
+      width: 93%;
+  }
+  .darkmode .hor p 
+  {
+    width: 36vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+  }
+  .darkmode .maps p 
+  {
+    top: 4vw;
+    margin-left: 1vw;
+  }
+  .darkmode .com p 
+  {
+    font-size: 6vw;
+  }
+  .darkmode .com h2 
+  {
+    width: 27vw;
+    top: -23vw;
+    margin-left: 33vw;
+  }
+  .darkmode .title 
+  {
+    font-size: 3vw;
+  }
+  .btn-anchor 
+  {
+    margin-left: 1vw;
   }
 }
