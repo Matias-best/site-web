@@ -8,9 +8,15 @@
 .darkmode .card
 {
   background-color: rgb(255, 144, 144);
+  border-radius:30% ;
 }
-.darkmode .card1 {
+.darkmode .card1 
+{
+  display: flex;
+  position: relative;
   background-color: rgb(255, 144, 144);
+  margin: auto;
+  margin-top: 2vw;
 }
 .darkmode .label 
 {
@@ -128,12 +134,13 @@
     position: relative;
     border-radius: 40%;
 }
-.darkmode .maps p {
-    color: black;
-    margin-left: 55vw;
-    top: -41vw;
-    position: relative;
-    font-size: 3vw;
+.darkmode .maps p
+{
+  color: black;
+  margin-left: 55vw;
+  top: -41vw;
+  position: relative;
+  font-size: 3vw;    
 }
 
 .darkmode .style {
@@ -179,15 +186,19 @@
   width: 100%;
   transition: transform .4s ease;
   position: relative;
-  border-radius: 20%
+  border-radius: 20%;
+}
+.darkmode .thumb1 img
+{
+  
+  width: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  
+
 }
 .darkmode .card1
 {
-  display: flex;
-  align-items: center;
-  padding: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  background: red;
   border-radius: 30%;
   padding: 22px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
@@ -217,7 +228,6 @@
   color: red;
   margin-right: auto;
   text-align: left;
-  margin-top: -12vw;
   padding: 2vw;
 }
 .darkmode .p1
@@ -229,15 +239,7 @@
   top: -9vw;
   margin-left: 50vw;
 }
-<<<<<<< HEAD
-.darkmode .thumb1 img 
-{ 
-  position: absolute;
-  max-width: 100%;
-  object-fit: cover;
- 
-}
-=======
+
 .darkmode #selection-contact
 {
   top: -55vw;
@@ -245,7 +247,6 @@
   font-size: 5vw;
 }
 
->>>>>>> d4a1d6d18d14889f2060108f03d8e138d42ab70d
 header 
 {
   display: flex;
