@@ -29,7 +29,11 @@
 {
   background-color: rgb(255, 144, 144);
   padding: 3vw;
+<<<<<<< HEAD
 
+=======
+  border-radius: 31%;
+>>>>>>> e7837d86ed37f2859df77eee5bb7c58688011d6a
 }
 .darkmode .label 
 {
