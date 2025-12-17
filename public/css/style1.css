@@ -1,14 +1,13 @@
 .darkmode .menu 
 {
-  background: radial-gradient(circle at 20% 20%, #aa2323, transparent),
-              radial-gradient(circle at 80% 80%, #6a00ff, transparent),
+  background: radial-gradient(circle at 20% 20%, rgb(144, 213, 255) transparent),
+              radial-gradient(circle at 80% 80%, #ffffff, transparent),
               #000;
 }
 
 .darkmode .card 
 {
   background-color: rgb(255, 144, 144);
-<<<<<<< HEAD
   border-radius:30% ;
 }
 .darkmode .card1 
@@ -146,21 +145,13 @@
   position: relative;
   border-radius: 40%;
 }
-<<<<<<< HEAD
-.darkmode .maps p
-=======
 .darkmode .maps p 
->>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 {
   color: black;
   margin-left: 55vw;
   top: -41vw;
   position: relative;
-<<<<<<< HEAD
   font-size: 3vw;    
-=======
-  font-size: 3vw;
->>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 }
 
 .darkmode .maps h2 
@@ -209,7 +200,6 @@
   
 
 }
-<<<<<<< HEAD
 .darkmode .card1
 {
   border-radius: 30%;
@@ -220,8 +210,6 @@
 
  
 }
-=======
->>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 .darkmode .subtitle 
 {
   font-size: 2vw;
@@ -238,22 +226,17 @@
 }
 .darkmode .label1 
 {
-<<<<<<< HEAD
   font-family: 'Great Vibes', cursive;
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: red;
   margin-right: auto;
   text-align: left;
-=======
   margin-left: -74vw;
->>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
-  padding: 2vw;
   top: -10vw;
 }
 .darkmode .p1 
 {
   font-size: 2vw;
-<<<<<<< HEAD
   color: red;
   text-align: center;
   font-family: 'Great Vibes', cursive;
@@ -268,8 +251,6 @@
   font-size: 5vw;
 }
 
-=======
-}
 
 .darkmode .thumb1 img 
 {
@@ -278,9 +259,6 @@
   top: -1vw;
   position: relative;
 }
-
-
->>>>>>> c4a6d071d441d471a1974217e5bb9c06008cd5f8
 header 
 {
   display: flex;
@@ -332,7 +310,7 @@ header
   padding: 15px;
   width: 10vw;
   height: 10vw;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgb(255, 255, 255, 0.1);
   border-radius: 10px;
   background-color: rgb(144, 213, 255);
 }
@@ -358,7 +336,7 @@ header
   margin-left: -2vw;
   top: -2vw;
 }
-summary 
+.summary 
 {
   top: -1vw;
   position: relative;
