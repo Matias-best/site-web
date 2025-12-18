@@ -9,7 +9,7 @@ const enableDarkmode = () => { // fonction pour activer le mode sombre
 
 const disableDarkmode = () => { // fonction pour désactiver le mode sombre
     document.body.classList.remove('darkmode'); // retire la classe darkmode du body
-    localStorage.setItem('darkmode', null); // supprime le mode sombre du localStorage
+    localStorage.removeItem('darkmode');
 }
 
 if(darkmode === "active") enableDarkmode(); // si le mode sombre est activé, on l'active
@@ -26,3 +26,4 @@ function toggleNavMenu() { // fonction pour afficher ou masquer le menu
 	 const navMenu = document.querySelector('.menu'); // sélectionne le menu
 	 navMenu.classList.toggle('active'); // ajoute ou retire la classe active au menu
 }
+
