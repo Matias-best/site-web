@@ -253,14 +253,15 @@
     top: -65vw;
     margin-left: 1vw;
   }
-   .darkmode .label1 {
+  .darkmode .label1
+  {
     font-size: 6vw;
-    top: -25vw;
+    top: -30vw;
   }
-  .darkmode .thumb1 img {
-    width: 8%;
-    margin-left: 394vw;
-    top: 4vw;
+  .darkmode .thumb1 img
+  {
+    width: 14%;
+    margin-left: 283vw;
   }
   .darkmode .p1 
   {
