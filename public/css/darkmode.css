@@ -5,7 +5,7 @@
               #000;
 }
 .darkmode {
-  background: linear-gradient(135deg, #f6ece8, #ff3333 );
+    background: linear-gradient(135deg, #f6ece8, #ff3333 );
 }
 .darkmode .card 
 {
@@ -21,18 +21,18 @@
 }
 .darkmode .card1 
 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0 5%;
-  background-color: #f99;
-  padding: 15px 40px;
-  border-radius: 80px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  max-height: 150px;
-  background: linear-gradient(to right, #ff3333, #ffffff);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 5%;
+    background-color: #f99;
+    padding: 15px 40px;
+    border-radius: 80px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    max-height: 150px;
+    background: linear-gradient(to right, #ff3333, #ffffff);
 }
 .darkmode .label 
 {
@@ -86,43 +86,43 @@
 }
 .darkmode .plat2 p 
 {
-  position: relative;
-  margin-right: auto;
-  text-align: left;
-  right: 40%;
-  top: -10vw;
-  font-size: 2vw;
-  border: 2px solid;
-  color: white;
-  border-radius: 10%;
-  background-color: rebeccapurple;
-  width: 35vw;
+    position: relative;
+    margin-right: auto;
+    text-align: left;
+    right: 40%;
+    top: -10vw;
+    font-size: 2vw;
+    border: 2px solid;
+    color: white;
+    border-radius: 10%;
+    background-color: rebeccapurple;
+    width: 35vw;
 }
 .darkmode .hor h2 
 {
-  position: relative;
-  font-size: 8vw;
-  width: 15vw;
-  border-radius: 20%;
-  top: -49vw;
-  margin-left: 65%;
-  border: 2px solid;
-  border-radius: 10%;
-  color: white;
-  background-color: rebeccapurple;
-  width: auto;
+    position: relative;
+    font-size: 8vw;
+    width: 15vw;
+    border-radius: 20%;
+    top: -49vw;
+    margin-left: 65%;
+    border: 2px solid;
+    border-radius: 10%;
+    color: white;
+    background-color: rebeccapurple;
+    width: auto;
 }
 .darkmode .hor p 
 {
-  position: relative;
-  top: -54vw;
-  margin-left: 65%;
-  font-size: 2vw;
-  border: 2px solid;
-  border-radius: 0%;
-  background-color: rebeccapurple;
-  width: auto;
-  color: white;
+    position: relative;
+    top: -54vw;
+    margin-left: 65%;
+    font-size: 2vw;
+    border: 2px solid;
+    border-radius: 0%;
+    background-color: rebeccapurple;
+    width: auto;
+    color: white;
 }
 .darkmode .thumb
 {
@@ -132,18 +132,18 @@
 
 .darkmode .thumb1 
 {
-  flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 
-.darkmode .com p 
-{
-  color: black;
-  position: relative;
-  top: -32vw;
-  margin-left: 4vw;
-  font-size: 3vw;
-}
+    .darkmode .com p 
+    {
+        color: black;
+        position: relative;
+        top: -32vw;
+        margin-left: 4vw;
+        font-size: 3vw;
+    }
 .darkmode .com h2 
 {
   margin-left: 50vw;
@@ -221,25 +221,25 @@
 }
 .darkmode .label1 
 {
-  flex: 1 1;
-  font-family: 'Great Vibes', cursive;
-  color: #333;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    flex: 1 1;
+    font-family: 'Great Vibes', cursive;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .darkmode .p1 
 {
-  font-size: 12px;
-  font-style: italic;
+    font-size: 12px;
+    font-style: italic;
 }
 
 .darkmode .thumb1 img 
 {
-  width: 133px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 133px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
@@ -267,22 +267,22 @@ header
 }
 #switch img 
 {
-position: absolute;
-width: 100%;
-height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 #switch img:last-child
 {
-  display:none;    
+   	display:none;    
 }
 
 .darkmode #switch img:first-child
 {
-  display:none;	                 
+    display:none;	                 
 }
 .darkmode #switch img:last-child
 {
-  display:block;	          
+    display:block;	          
 }
 .menu 
 {
@@ -293,10 +293,10 @@ height: 100%;
   border: black 2px solid;
   padding: 15px;
   width: 10vw;
-  height: 10vw;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  background-color: rgb(144, 213, 255);
+    height: 10vw;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: rgb(144, 213, 255);
   
 }
 .menu.active 
