@@ -1,4 +1,4 @@
-/* Ajuste automatiquement la taille du site selon la largeur de l'écran */
+
 @media screen and (max-width: 400px) 
 {
   body, html 
@@ -177,30 +177,38 @@
   {
     width: 90%;
   }
-  .label, .subtitle 
+ 
+  .thumb1
   {
-    font-size: 22px;
+      margin: 0 !important;
+      position: static !important;
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
   }
+
   .thumb1 img 
   {
-    width: 43vw;
-    margin-left: 316vw;
+      width: 80px ;
+      height: 80px ;
+      margin: 0 ;
   }
-  .label1 
+  .label1, .p1
   {
-    font-size: 6vw;
-    top: -51vw;
-    margin-left: 16vw;
-  }
-  .p1 
-  {
-    font-size: 4vw;
-    margin-left: 38vw;
-    top: -22vw;
+      white-space: normal; /* pour sauter les lignes */
+      text-align: center;
+      width: 100%;
+      margin: 0
   }
   .card1 
   {
-    height: 20vw;
+      display: flex ;
+      flex-direction: column ;
+      align-items: center ;
+      height: auto ; /* Enlève le vide en bas */
+      padding: 15px ;
+      border-radius: 25px ; 
+      gap: 10px;
   }
   nav img 
   {
@@ -253,22 +261,7 @@
     top: -65vw;
     margin-left: 1vw;
   }
-  .darkmode .label1
-  {
-    font-size: 6vw;
-    top: -30vw;
-  }
-  .darkmode .thumb1 img
-  {
-    width: 14%;
-    margin-left: 283vw;
-  }
-  .darkmode .p1 
-  {
-    font-size: 4vw;
-    margin-left: 38vw;
-    top: -22vw;
-  }
+  
   .darkmode .maps img 
   {
       width: 93%;

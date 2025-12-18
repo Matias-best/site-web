@@ -18,7 +18,8 @@
 			"@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Département Informatique - IUT d'Aix-en-Provence",
-  "address": {
+  "address": 
+  {
     "@type": "PostalAddress",
     "streetAddress": "Avenue Gaston Berger",
     "addressLocality": "Aix-en-Provence",
@@ -118,15 +119,15 @@
 		  		<h3 class="droite" id="selection-contact">Nous contacter</h3>		
 					<form class ="style" id="form" action="mailto:my@e-mail?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
 						<p>
-							<label  class="droite">Prénom</label><input id="prenom" type="text" name="prenom" value=" ">
-							<label class="droite">Nom</label><input id="nom" type="text" name="nom" value=" ">
-				
-							<label  class="droite">E-mail&nbsp;:</label>
+							<label class="droite" for="prenom">Prénom :</label>
+							<input id="prenom" type="text" name="prenom" value="">
+
+							<label class= "droite" for="mail">Email :</label>
 							<input type="email" id="mail" name="user_mail">
-			
-							<label class="droite" >Laissez un message&nbsp;:</label>
+
+							<label class="droite" for= "msg">Laissez un message&nbsp;:</label>
 							<textarea id="msg" name="user_message"></textarea>
-							<input  class="droite" type="submit" value="Envoyer">
+							<input class="droite" type="submit" value="Envoyer">
 						</p>
 					</form>
 			</footer>
